@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  border: 10px red solid;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.left-container {
+  border: 10px orange solid;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+.main-content {
+  border: 10px purple solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 83%;
+}
+
+.bottom-left {
+  border: 10px grey solid;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 17%;
+}
+
+.dev-utilities {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.right-container {
+  border: 10px green solid;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companion-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px blue solid;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: 1em;
+}
+
+.character-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px blue solid;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1em;
+}

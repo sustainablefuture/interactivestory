@@ -1,28 +1,28 @@
 import "./App.css";
-import React, { useState, useContext } from "react";
-import Start from "./Components/Start";
-import Intro from "./Components/Intro";
-import Chapter from "./Components/Chapter";
-import { StoryContext } from "./Helpers/Context";
-import Game from "./Components/Game";
-import Quiz from "./Components/Quiz";
-import Text from "./Components/Text";
+import CharacterPortrait from "./Components/CharacterPortrait";
+import Companion from "./Components/Companion";
+import MainContent from "./Components/MainContent";
+import useToggle from "./hooks/useToggle";
 
 function App() {
-  const [storyState, setStoryState] = useState("start");
+  const [menu, toggleMenu] = useToggle(false);
 
   return (
     <div className="App">
-      <StoryContext.Provider value={{ storyState, setStoryState }}>
-        {storyState === "start" && <Start />}
-        {storyState === "intro" && <Intro />}
-        {storyState === "chapter" && <Chapter />}
-        {storyState === "text" && <Text />}
-        {storyState === "quiz" && <Quiz />}
-        {storyState === "game" && <Game />}
-      </StoryContext.Provider>
+      <div className="left-container">
+        <MainContent />
+        <div className="bottom-left">
+          <button onClick={toggleMenu} className="dev-utilities">
+            Dev
+          </button>
+          {menu ? <div>I'm developer tools</div> : <></>}
+        </div>
+      </div>
+      <div className="right-container">
+        <Companion />
+        <CharacterPortrait />
+      </div>
     </div>
   );
 }
-
 export default App;
