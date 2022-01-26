@@ -11,7 +11,7 @@ export default function Intro() {
           setStoryState("intro");
         }}
       >
-        Start Quiz
+        Start
       </button>
     </div>
   );
