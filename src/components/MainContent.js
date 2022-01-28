@@ -9,9 +9,13 @@ import Text from "./Text";
 
 export default function MainContent() {
   const [storyState, setStoryState] = useState("start");
+  const [score, setScore] = useState(0);
+
   return (
     <div className="main-content">
-      <StoryContext.Provider value={{ storyState, setStoryState }}>
+      <StoryContext.Provider
+        value={{ storyState, setStoryState, score, setScore }}
+      >
         {storyState === "start" && <Start />}
         {storyState === "intro" && <Intro />}
         {storyState === "chapter" && <Chapter />}
