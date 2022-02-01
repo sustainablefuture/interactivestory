@@ -6,9 +6,10 @@ import { StoryContext } from "../Helpers/Context";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
+import CharacterSelection from "./CharacterSelection";
 
-export default function MainContent() {
-  const [storyState, setStoryState] = useState("start");
+export default function MainContent({ selectChar, selectedChar }) {
+  const [storyState, setStoryState] = useState("select");
   const [score, setScore] = useState(0);
 
   return (
@@ -18,6 +19,12 @@ export default function MainContent() {
       >
         {storyState === "start" && <Start />}
         {storyState === "intro" && <Intro />}
+        {storyState === "select" && (
+          <CharacterSelection
+            selectedChar={selectedChar}
+            selectChar={selectChar}
+          />
+        )}
         {storyState === "chapter" && <Chapter />}
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}

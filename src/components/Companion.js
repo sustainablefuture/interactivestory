@@ -1,28 +1,18 @@
 import "./Companion.css";
-import { useState, useEffect } from "react";
+import { Popover } from "@headlessui/react";
 
-export default function Companion() {
-  const [isVisible, setIsVisible] = useState(true);
-  const [isBubbleVisible, setIsBubbleVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(isVisible);
-  }, [isVisible]);
-
-  function onClick() {
-    setIsBubbleVisible(true);
-  }
-
+export default function Companion({
+  isCompanionvisible,
+  setIsCompanionvisible,
+}) {
   return (
     <div className="companion-frame">
-      {isBubbleVisible ? (
-        <div className="popup">
-          <div className="box bubble">I'm the bubble text</div>
-          <div className="turtle" onClick={onClick}></div>
-        </div>
-      ) : (
-        <div className="turtle" onClick={onClick}></div>
-      )}
+      <Popover className="popover">
+        <Popover.Panel className="thought">
+          I'm the bubble text Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
+        </Popover.Panel>
+        <Popover.Button className="turtle"></Popover.Button>
+      </Popover>
     </div>
   );
 }

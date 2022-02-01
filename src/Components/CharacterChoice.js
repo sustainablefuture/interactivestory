@@ -1,10 +1,11 @@
 import { characters } from "../Data/Characters";
+import "./CharacterChoice.css";
 
-export default function CharacterPortrait({ selectedChar }) {
+export default function CharacterChoice({ selectedChar }) {
   const selectedCharInfo = characters.find(({ id }) => selectedChar === id);
-  console.log(selectedCharInfo);
   return (
-    <div className="character-portrait">
+    <div className="character-choice">
+      <h1>{selectedCharInfo?.name}</h1>
       <img alt={selectedCharInfo?.name} src={selectedCharInfo?.img} />
     </div>
   );
