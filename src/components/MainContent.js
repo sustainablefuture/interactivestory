@@ -6,7 +6,7 @@ import { StoryContext } from "../Helpers/Context";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
-import CharacterSelection from "./CharacterSelection";
+import CharacterSelection from "./CharacterSelection.js";
 
 export default function MainContent({ selectChar, selectedChar }) {
   const [storyState, setStoryState] = useState("select");
