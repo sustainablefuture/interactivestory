@@ -1,0 +1,26 @@
+.quizcontainer {
+  width: 400px;
+  max-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.answbtn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+  margin: 20px 0;
+}
+
+.answbtn:hover {
+  border-color: blueviolet;
+}
+
+.answbtn.correct {
+  background-color: green;
+}
+
+.answbtn.wrong {
+  background-color: red;
+}

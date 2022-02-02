@@ -1,0 +1,87 @@
+.turtle {
+  background: url(../Images/cartoonfish.png);
+  transform: scale(0.45);
+  width: 498px;
+  height: 327px;
+  border: none;
+  position: absolute;
+}
+
+.turtle:hover {
+  animation: swim 2.5s steps(4) infinite;
+  position: absolute;
+}
+
+@keyframes swim {
+  0% {
+    background-position: -498px 0px;
+  }
+  0% {
+    background-position: -996px 0px;
+  }
+  0% {
+    background-position: -1494px 0px;
+  }
+  0% {
+    background-position: -1992px 0px;
+  }
+}
+
+.popover {
+  height: 300px;
+  width: 300px;
+}
+
+.thought {
+  display: flex;
+  background-color: #74c5d9;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 40px;
+  max-width: 220px;
+  min-height: 40px;
+  margin: 20px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thought:before,
+.thought:after {
+  content: "";
+  background-color: #b94b77;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.thought:before {
+  width: 44px;
+  height: 44px;
+  top: -12px;
+  left: 28px;
+  box-shadow: -50px 30px 0 -12px #b94b77;
+}
+.thought:after {
+  bottom: -10px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 40px -34px 0 0 #b94b77, -28px -6px 0 -2px #b94b77,
+    -24px 17px 0 -6px #b94b77, -5px 25px 0 -10px #b94b77;
+}
+
+/* .thought:hover {
+  animation: Moveup 1.5s;
+  position: absolute;
+}
+
+@keyframes Moveup {
+  0%,
+  100% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+} */

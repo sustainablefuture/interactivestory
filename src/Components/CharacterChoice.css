@@ -1,0 +1,9 @@
+.character-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px orange solid;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1em;
+}

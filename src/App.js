@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
@@ -7,6 +8,8 @@ import Desk from "./images/desk5.jpg";
 
 function App() {
   const [menu, toggleMenu] = useToggle(false);
+  const [selectedChar, setSelectedChar] = useState(null);
+  const [isCompanionvisible, setIsCompanionvisible] = useState(false);
 
   return (
     <div
@@ -18,7 +21,7 @@ function App() {
       className="App"
     >
       <div className="left-container">
-        <MainContent />
+        <MainContent selectChar={setSelectedChar} selectedChar={selectedChar} />
         <div className="bottom-left">
           <button onClick={toggleMenu} className="dev-utilities">
             Dev
@@ -27,8 +30,10 @@ function App() {
         </div>
       </div>
       <div className="right-container">
-        <Companion />
-        <CharacterPortrait />
+        <Companion
+          showCompanion={(isCompanionvisible, setIsCompanionvisible)}
+        />
+        <CharacterPortrait selectedChar={selectedChar} />
       </div>
     </div>
   );

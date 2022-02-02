@@ -1,0 +1,35 @@
+.characterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.charhead {
+  display: flex;
+  flex-direction: column;
+}
+
+.charboxes {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.charbox {
+  width: 150px;
+  height: 150px;
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.charbox:hover {
+  transform: scale(1.2);
+}
+
+.chosenCard {
+  border: 10px solid black;
+}
