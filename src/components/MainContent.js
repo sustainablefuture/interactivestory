@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
-
+import { story } from "../Data/Story";
 import Book from "../images/book.png";
-
 import Start from "./Start";
 import Intro from "./Intro";
 import Chapter from "./Chapter";
@@ -14,6 +13,7 @@ import CharacterSelection from "./CharacterSelection.js";
 export default function MainContent({ selectChar, selectedChar }) {
   const [storyState, setStoryState] = useState("select");
   const [score, setScore] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
 
   return (
     <div
@@ -24,8 +24,39 @@ export default function MainContent({ selectChar, selectedChar }) {
       }}
       className="main-content"
     >
-      {/* <div className="left-page"></div>
-      <div className="right-page"></div> */}
+      {/*validate for null data */}
+      {/* <div className="left-page">
+        {story
+          .filter((pannel) => pannel.page === currentPage)[0]
+          .content.map((item) => {
+            switch (item.type) {
+              case "title":
+                return <h1>{item.title}</h1>;
+              case "paragraph":
+                return <p key={item.page}>{item.text}</p>;
+              case "image":
+                return (
+                  <img width="200px" src={item.image} alt={item.type}></img>
+                );
+              default:
+                break;
+            }
+          })}
+      </div>
+      <div className="right-page">
+        <button
+          onClick={() => setCurrentPage(currentPage - 1)}
+          className="next-button"
+        >
+          back
+        </button>
+        <button
+          onClick={() => setCurrentPage(currentPage + 1)}
+          className="next-button"
+        >
+          next
+        </button>
+      </div> */}
       <StoryContext.Provider
         value={{ storyState, setStoryState, score, setScore }}
       >
