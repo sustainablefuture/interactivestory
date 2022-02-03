@@ -1,65 +1,26 @@
-import React, { useState, useContext } from "react";
-import { story } from "../Data/Story";
+import { useState } from "react";
 import Book from "../images/book.png";
+import { StoryContext } from "../Helpers/Context";
 import Start from "./Start";
 import Intro from "./Intro";
+import CharacterSelection from "./CharacterSelection.js";
 import Chapter from "./Chapter";
-import { StoryContext } from "../Helpers/Context";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
-import CharacterSelection from "./CharacterSelection.js";
 
-export default function MainContent({ selectChar, selectedChar }) {
-  const [storyState, setStoryState] = useState("select");
+const bookBackgroundStyles = {
+  backgroundImage: `url(${Book})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+};
+
+export default function MainContent({ storyState, selectChar, selectedChar }) {
   const [score, setScore] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
 
   return (
-    <div
-      style={{
-        backgroundImage: `url(${Book})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "contain",
-      }}
-      className="main-content"
-    >
-      {/*validate for null data */}
-      {/* <div className="left-page">
-        {story
-          .filter((pannel) => pannel.page === currentPage)[0]
-          .content.map((item) => {
-            switch (item.type) {
-              case "title":
-                return <h1>{item.title}</h1>;
-              case "paragraph":
-                return <p key={item.page}>{item.text}</p>;
-              case "image":
-                return (
-                  <img width="200px" src={item.image} alt={item.type}></img>
-                );
-              default:
-                break;
-            }
-          })}
-      </div>
-      <div className="right-page">
-        <button
-          onClick={() => setCurrentPage(currentPage - 1)}
-          className="next-button"
-        >
-          back
-        </button>
-        <button
-          onClick={() => setCurrentPage(currentPage + 1)}
-          className="next-button"
-        >
-          next
-        </button>
-      </div> */}
-      <StoryContext.Provider
-        value={{ storyState, setStoryState, score, setScore }}
-      >
+    <div style={bookBackgroundStyles} className="main-content">
+      <StoryContext.Provider value={{ storyState, score, setScore }}>
         {storyState === "start" && <Start />}
         {storyState === "intro" && <Intro />}
         {storyState === "select" && (
@@ -76,3 +37,6 @@ export default function MainContent({ selectChar, selectedChar }) {
     </div>
   );
 }
+
+// Checked
+// Should storystate button change be related to chapterpage change button?

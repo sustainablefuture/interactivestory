@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import Book from "../images/book.png";
+import Book from "../images/book-ipad.png";
 
 // import Start from "./Start";
 // import Intro from "./Intro";
@@ -33,3 +33,6 @@ export default function MainContent() {
     </div>
   );
 }
+
+// to be modified after the rest for responsiveness.
+// Might be unecessary
