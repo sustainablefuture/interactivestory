@@ -15,7 +15,14 @@ const bookBackgroundStyles = {
   backgroundSize: "contain",
 };
 
-export default function MainContent({ storyState, selectChar, selectedChar }) {
+export default function MainContent({
+  currentPage,
+  setCurrentPage,
+  storyState,
+  selectChar,
+  selectedChar,
+  story,
+}) {
   const [score, setScore] = useState(0);
 
   return (
@@ -29,11 +36,29 @@ export default function MainContent({ storyState, selectChar, selectedChar }) {
             selectChar={selectChar}
           />
         )}
-        {storyState === "chapter" && <Chapter />}
+        {storyState === "chapter" && (
+          <Chapter
+            chapter={story[currentPage]}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        )}
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}
         {storyState === "game" && <Game />}
       </StoryContext.Provider>{" "}
+      <button
+        onClick={() => setCurrentPage(currentPage - 1)}
+        className="prev-button"
+      >
+        back
+      </button>
+      <button
+        onClick={() => setCurrentPage(currentPage + 1)}
+        className="next-button"
+      >
+        next
+      </button>
     </div>
   );
 }

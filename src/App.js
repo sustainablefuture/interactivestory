@@ -4,6 +4,7 @@ import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
 import Desk from "./images/desk.jpg";
+import { story } from "./Data/Story";
 
 const deskBackgroundStyles = {
   backgroundImage: `url(${Desk})`,
@@ -14,46 +15,21 @@ const deskBackgroundStyles = {
 function App() {
   const [selectedChar, setSelectedChar] = useState(null);
   const [isCompanionVisible, setIsCompanionVisible] = useState(true);
-  const [storyState, setStoryState] = useState("start");
+  const [currentPage, setCurrentPage] = useState(0);
+  const storyState = story[currentPage].type;
 
   return (
     <div style={deskBackgroundStyles} className="App">
       <div className="left-container">
         <MainContent
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
           storyState={storyState}
           selectChar={setSelectedChar}
           selectedChar={selectedChar}
+          story={story}
         />
-        {/* 2- Added dev buttons to change the storyState manually for development*/}
-        <div className="bottom-left">
-          <button className="dev-button" onClick={() => setStoryState("start")}>
-            start
-          </button>
-          <button className="dev-button" onClick={() => setStoryState("intro")}>
-            intro
-          </button>
-          <button
-            className="dev-button"
-            onClick={() => setStoryState("select")}
-          >
-            select
-          </button>
-          <button
-            className="dev-button"
-            onClick={() => setStoryState("chapter")}
-          >
-            chapter
-          </button>
-          <button className="dev-button" onClick={() => setStoryState("text")}>
-            text
-          </button>
-          <button className="dev-button" onClick={() => setStoryState("quiz")}>
-            quiz
-          </button>
-          <button className="dev-button" onClick={() => setStoryState("game")}>
-            game
-          </button>
-        </div>
+        <div className="bottom-left"></div>
       </div>
       <div className="right-container">
         {/* 1 - modified <Companion /> to show it if the state is true */}
