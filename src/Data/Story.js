@@ -18,6 +18,7 @@ const story = [
   {
     page: 4,
     type: "chapter",
+    title: "An afternoon at the park",
     chapter_number: "1",
     sub_chapter_number: "1",
     content: [
@@ -88,11 +89,11 @@ const story = [
     type: "text",
   },
   {
-    page: 5,
+    page: 6,
     type: "quiz",
   },
   {
-    page: 5,
+    page: 7,
     type: "game",
   },
 ];

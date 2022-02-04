@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 import Book from "../images/book.png";
 import { StoryContext } from "../Helpers/Context";
 import Start from "./Start";
@@ -15,15 +16,11 @@ const bookBackgroundStyles = {
   backgroundSize: "contain",
 };
 
-export default function MainContent({
-  currentPage,
-  setCurrentPage,
-  storyState,
-  selectChar,
-  selectedChar,
-  story,
-}) {
-  const [score, setScore] = useState(0);
+export default function MainContent({ selectChar, selectedChar, story }) {
+  const [score, setScore] = useLocalStorage("score", 0);
+  const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
+  const storyState = story[currentPage].type;
+  console.log(currentPage);
 
   return (
     <div style={bookBackgroundStyles} className="main-content">

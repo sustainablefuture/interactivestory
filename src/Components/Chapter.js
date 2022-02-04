@@ -3,17 +3,25 @@ import { useState } from "react";
 import "./styles/Chapter.css";
 
 // determines the number of items shown per slide
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 2;
 
 export default function Chapter({ chapter, currentPage, setCurrentPage }) {
-  // create custom hook to manage chapter data
   const [currentChapterPage, setCurrentChapterPage] = useState(1);
   const numberOfItems = chapter.content.length;
   const numberOfPages = Math.ceil(numberOfItems / PAGE_SIZE);
 
   const firstDataIndex = (currentChapterPage - 1) * PAGE_SIZE;
   const lastDataIndex = firstDataIndex + PAGE_SIZE;
-  console.log(chapter.content.slice(firstDataIndex, lastDataIndex));
+
+  const slideData = chapter.content.slice(firstDataIndex, lastDataIndex);
+
+  console.log(slideData);
+
+  const leftPageData =
+    slideData.length > PAGE_SIZE / 2
+      ? slideData.slice(0, PAGE_SIZE / 2)
+      : slideData;
+  const rightPageData = slideData.slice(PAGE_SIZE / 2);
 
   const onPageChange = () => {
     if (currentChapterPage === numberOfPages) {
@@ -26,34 +34,31 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
   return (
     <>
       <div className="left-page">
-        <h1 className="chapter-title">{`Chapter ${chapter.chapter_number}`}</h1>
+        <h1 className="chapter-title">{`Chapter ${chapter.chapter_number}: ${chapter.title}`}</h1>
+        {leftPageData.map((leftData) => {
+          if (leftData.type === "paragraph") {
+            return <p>{leftData.text}</p>;
+          }
+
+          if (leftData.type === "image") {
+            // add a alt element
+            return <img src={leftData.image}></img>;
+          }
+        })}
       </div>
       <div className="right-page">
-        <button onClick={onPageChange}>next page</button>
+        {rightPageData.map((rightData) => {
+          if (rightData.type === "paragraph") {
+            return <p>{rightData.text}</p>;
+          }
+
+          if (rightData.type === "image") {
+            // add a alt element
+            return <img src={rightData.image}></img>;
+          }
+        })}
       </div>
+      <button onClick={onPageChange}>next page</button>
     </>
   );
 }
-
-// {
-//   {
-//     story
-//       .filter((pannel) => pannel.page === currentPage)[0]
-//       .content.map((item) => {
-//         switch (item.type) {
-//           case "title":
-//             return <h1>{item.title}</h1>;
-//           case "paragraph":
-//             return <p key={item.page}>{item.text}</p>;
-//           case "image":
-//             return <img width="200px" src={item.image} alt={item.type}></img>;
-//           default:
-//             break;
-//         }
-//       });
-//   }
-// }
-
-// {
-//   item.type === "title" && <h1>{item.title}</h1>;
-// }
