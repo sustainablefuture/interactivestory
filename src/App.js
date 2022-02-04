@@ -3,7 +3,7 @@ import { useState } from "react";
 import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
-import Desk from "./images/desk.jpg";
+import Desk from "./Images/desk.jpg";
 import { story } from "./Data/Story";
 
 const deskBackgroundStyles = {

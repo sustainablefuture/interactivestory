@@ -1,14 +1,14 @@
 import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
-import Book from "../images/book.png";
+import Book from "../Images/book.png";
 import { StoryContext } from "../Helpers/Context";
 import Start from "./Start";
 import Intro from "./Intro";
 import CharacterSelection from "./CharacterSelection.js";
 import Chapter from "./Chapter";
 import Game from "./Game";
-import Quiz from "./Quiz";
 import Text from "./Text";
+import Quiz from "./Quiz";
 import BetterChoices from "./BetterChoices";
 
 const bookBackgroundStyles = {
@@ -20,6 +20,9 @@ const bookBackgroundStyles = {
 export default function MainContent({ selectChar, selectedChar, story }) {
   const [score, setScore] = useLocalStorage("score", 0);
   const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
+  if (currentPage > 6 || currentPage < 0) {
+    setCurrentPage(0);
+  }
   const storyState = story[currentPage].type;
   console.log(currentPage);
 
