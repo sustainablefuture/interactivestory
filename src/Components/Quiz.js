@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { StoryContext } from "../Helpers/Context";
-import "./Quiz.css";
+import "./styles/Quiz.css";
 import { questions } from "../Data/MCQuestions";
 
 export default function Quiz() {
@@ -75,3 +75,5 @@ export default function Quiz() {
     </>
   );
 }
+
+// checked, but I didn't refactor because you're still working on those I believe

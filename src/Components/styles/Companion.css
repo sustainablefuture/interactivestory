@@ -1,5 +1,5 @@
-.turtle {
-  background: url(../Images/cartoonfish.png);
+.companion {
+  background: url(../../images/cartoonfish.png);
   transform: scale(0.45);
   width: 498px;
   height: 327px;
@@ -7,7 +7,7 @@
   position: absolute;
 }
 
-.turtle:hover {
+.companion:hover {
   animation: swim 2.5s steps(4) infinite;
   position: absolute;
 }

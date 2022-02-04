@@ -1,5 +1,5 @@
-import boy from "../Images/boy.PNG";
-import girl from "../Images/girl.PNG";
+import boy from "../images/boy.PNG";
+import girl from "../images/girl.PNG";
 
 const characters = [
   {

@@ -1,6 +1,13 @@
+/* * {
+  border: red 5px solid;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   display: flex;
-  border: 10px red solid;
   width: 100vw;
   height: 100vh;
   padding: 0;
@@ -8,7 +15,6 @@
 }
 
 .left-container {
-  border: 10px orange solid;
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -16,30 +22,60 @@
 }
 
 .main-content {
-  border: 10px purple solid;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 83%;
+  margin-top: 30px;
+}
+
+.left-page {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 82%;
+  width: 45%;
+  margin: 20px 60px 100px 80px;
+  padding: 20px;
+}
+
+.right-page {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  height: 82%;
+  width: 45%;
+  margin: 20px 90px 100px 50px;
+  padding: 20px;
+}
+
+.next-button {
+  justify-self: flex-end;
+  align-self: flex-end;
+  border: solid red 1px;
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .bottom-left {
-  border: 10px grey solid;
   display: flex;
   align-items: center;
   width: 100%;
   height: 17%;
 }
 
-.dev-utilities {
+.dev-button {
   width: 50px;
   height: 50px;
   margin-left: 10px;
 }
 
 .right-container {
-  border: 10px green solid;
   width: 20%;
   height: 100%;
   display: flex;
@@ -49,10 +85,12 @@
 }
 
 .companion-frame {
-  /* display: flex; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px blue solid;
   border-radius: 50%;
   width: 500px;
   height: 300px;
@@ -60,11 +98,13 @@
 }
 
 .character-portrait {
+  position: fixed;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px blue solid;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin-bottom: 1em;
 }

@@ -1,22 +1,26 @@
-import React, { useState, useContext } from "react";
+import { useState } from "react";
+import Book from "../images/book.png";
+import { StoryContext } from "../Helpers/Context";
 import Start from "./Start";
 import Intro from "./Intro";
+import CharacterSelection from "./CharacterSelection.js";
 import Chapter from "./Chapter";
-import { StoryContext } from "../Helpers/Context";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
-import CharacterSelection from "./CharacterSelection.js";
 
-export default function MainContent({ selectChar, selectedChar }) {
-  const [storyState, setStoryState] = useState("select");
+const bookBackgroundStyles = {
+  backgroundImage: `url(${Book})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "contain",
+};
+
+export default function MainContent({ storyState, selectChar, selectedChar }) {
   const [score, setScore] = useState(0);
 
   return (
-    <div className="main-content">
-      <StoryContext.Provider
-        value={{ storyState, setStoryState, score, setScore }}
-      >
+    <div style={bookBackgroundStyles} className="main-content">
+      <StoryContext.Provider value={{ storyState, score, setScore }}>
         {storyState === "start" && <Start />}
         {storyState === "intro" && <Intro />}
         {storyState === "select" && (
@@ -29,7 +33,10 @@ export default function MainContent({ selectChar, selectedChar }) {
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}
         {storyState === "game" && <Game />}
-      </StoryContext.Provider>
+      </StoryContext.Provider>{" "}
     </div>
   );
 }
+
+// Checked
+// Should storystate button change be related to chapterpage change button?

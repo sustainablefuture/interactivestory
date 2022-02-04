@@ -1,5 +1,4 @@
-import React from "react";
-import "./CharacterSelection.css";
+import "./styles/CharacterSelection.css";
 import { characters } from "../Data/Characters";
 import CharacterChoice from "./CharacterChoice";
 import { Card } from "react-bootstrap";
@@ -45,3 +44,7 @@ export default function CharacterSelection({ selectChar, selectedChar }) {
     </div>
   );
 }
+
+// checked
+// need to add a left-right page division
+// need to add characters characteristics and preferences

@@ -11,3 +11,5 @@ export default function useToggle(defaultValue) {
 
   return [value, toggleValue];
 }
+
+// checked, might be useful or not, let's keep it for now

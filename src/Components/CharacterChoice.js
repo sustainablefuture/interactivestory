@@ -1,5 +1,5 @@
 import { characters } from "../Data/Characters";
-import "./CharacterChoice.css";
+import "./styles/CharacterChoice.css";
 
 export default function CharacterChoice({ selectedChar }) {
   const selectedCharInfo = characters.find(({ id }) => selectedChar === id);
@@ -10,3 +10,5 @@ export default function CharacterChoice({ selectedChar }) {
     </div>
   );
 }
+
+// checked

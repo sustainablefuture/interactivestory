@@ -3,31 +3,67 @@ import { useState } from "react";
 import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
-import useToggle from "./hooks/useToggle";
+import Desk from "./images/desk.jpg";
+
+const deskBackgroundStyles = {
+  backgroundImage: `url(${Desk})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+};
 
 function App() {
-  const [menu, toggleMenu] = useToggle(false);
   const [selectedChar, setSelectedChar] = useState(null);
-  const [isCompanionvisible, setIsCompanionvisible] = useState(false);
+  const [isCompanionVisible, setIsCompanionVisible] = useState(true);
+  const [storyState, setStoryState] = useState("start");
 
   return (
-    <div className="App">
+    <div style={deskBackgroundStyles} className="App">
       <div className="left-container">
-        <MainContent selectChar={setSelectedChar} selectedChar={selectedChar} />
+        <MainContent
+          storyState={storyState}
+          selectChar={setSelectedChar}
+          selectedChar={selectedChar}
+        />
+        {/* 2- Added dev buttons to change the storyState manually for development*/}
         <div className="bottom-left">
-          <button onClick={toggleMenu} className="dev-utilities">
-            Dev
+          <button className="dev-button" onClick={() => setStoryState("start")}>
+            start
           </button>
-          {menu ? <div>I'm developer tools</div> : <></>}
+          <button className="dev-button" onClick={() => setStoryState("intro")}>
+            intro
+          </button>
+          <button
+            className="dev-button"
+            onClick={() => setStoryState("select")}
+          >
+            select
+          </button>
+          <button
+            className="dev-button"
+            onClick={() => setStoryState("chapter")}
+          >
+            chapter
+          </button>
+          <button className="dev-button" onClick={() => setStoryState("text")}>
+            text
+          </button>
+          <button className="dev-button" onClick={() => setStoryState("quiz")}>
+            quiz
+          </button>
+          <button className="dev-button" onClick={() => setStoryState("game")}>
+            game
+          </button>
         </div>
       </div>
       <div className="right-container">
-        <Companion
-          showCompanion={(isCompanionvisible, setIsCompanionvisible)}
-        />
+        {/* 1 - modified <Companion /> to show it if the state is true */}
+        {isCompanionVisible ? <Companion /> : <></>}
         <CharacterPortrait selectedChar={selectedChar} />
       </div>
     </div>
   );
 }
 export default App;
+
+// checked
+// useLocalStorage hook needed to store selectedChar, isCompanionVisible, storyState, storyProgress(tbd)
