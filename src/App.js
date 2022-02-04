@@ -3,7 +3,7 @@ import { useState } from "react";
 import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
-import Desk from "./images/desk.jpg";
+import Desk from "./Images/desk.jpg";
 
 const deskBackgroundStyles = {
   backgroundImage: `url(${Desk})`,
@@ -49,6 +49,12 @@ function App() {
           </button>
           <button className="dev-button" onClick={() => setStoryState("quiz")}>
             quiz
+          </button>
+          <button
+            className="dev-button"
+            onClick={() => setStoryState("choices")}
+          >
+            betterchoices
           </button>
           <button className="dev-button" onClick={() => setStoryState("game")}>
             game

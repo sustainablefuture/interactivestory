@@ -1,8 +1,8 @@
 import plastic from "../Images/plastic.jpg";
-import singleuse from "../Images/singleuse.jpg";
+import singleuse from "../Images/single-use.jpg";
 import balls from "../Images/balls.jpg";
 import brush from "../Images/brush.jpg";
-import bottle from "../Images/bottle.jpg";
+import bottlebeach from "../Images/bottlebeach.jpg";
 
 const questions = [
   {
@@ -21,7 +21,7 @@ const questions = [
   {
     id: 2,
     img: singleuse,
-    question: "What are single-use plastic?",
+    question: "What is single-use plastic?",
     answerOptions: [
       {
         answer: "Objects that are made to be used by just one person",
@@ -72,7 +72,7 @@ const questions = [
   },
   {
     id: 5,
-    img: bottle,
+    img: bottlebeach,
     question: "What happens to a plastic bottle if you bury it in the ground?",
     answerOptions: [
       { answer: "It turns into rock.", id: 1, isCorrect: false },

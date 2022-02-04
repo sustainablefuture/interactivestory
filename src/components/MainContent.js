@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Book from "../images/book.png";
+import Book from "../Images/book.png";
 import { StoryContext } from "../Helpers/Context";
 import Start from "./Start";
 import Intro from "./Intro";
@@ -8,6 +8,7 @@ import Chapter from "./Chapter";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
+import Choices from "./BetterChoices";
 
 const bookBackgroundStyles = {
   backgroundImage: `url(${Book})`,
@@ -32,6 +33,7 @@ export default function MainContent({ storyState, selectChar, selectedChar }) {
         {storyState === "chapter" && <Chapter />}
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}
+        {storyState === "choice" && <Choices />}
         {storyState === "game" && <Game />}
       </StoryContext.Provider>{" "}
     </div>
