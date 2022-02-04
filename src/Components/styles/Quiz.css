@@ -52,3 +52,8 @@
 .answbtn.wrong {
   background-color: red;
 }
+
+.choice-section {
+  display: flex;
+  flex-direction: row;
+}

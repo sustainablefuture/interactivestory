@@ -26,7 +26,7 @@ export default function Quiz() {
         setCurrentQuestion(nextQuestion);
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
-      }, 2000);
+      }, 5000);
     } else {
       setStoryState("start");
     }
@@ -53,8 +53,8 @@ export default function Quiz() {
 
   return (
     <>
-      <div className="quizcontainer">
-        <div className="left-container">
+      <div className="left-page">
+        <div className="quizcontainer">
           <div id="questioncontainer">
             <h1 id="question">{questions[currentQuestion].question}</h1>
             <img
@@ -81,18 +81,21 @@ export default function Quiz() {
               </div>
             </div>
           </div>
-          {showAnswerExpl ? (
-            <p>{questions[currentQuestion].explanation}</p>
-          ) : (
-            ""
-          )}
-        </div>
-
-        <div className="right-container score-section">
-          You scored {score} out of {questions.length}
+          <div className="right-page">
+            {showAnswerExpl ? (
+              <p>{questions[currentQuestion].explanation}</p>
+            ) : (
+              ""
+            )}
+            <div className="score-section">
+              <i class="fas fa-trophy"></i>
+              <h3>
+                You scored {score} out of {questions.length}
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="turtle"></div>
     </>
   );
 }

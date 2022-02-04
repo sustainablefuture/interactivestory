@@ -14,7 +14,7 @@ const deskBackgroundStyles = {
 function App() {
   const [selectedChar, setSelectedChar] = useState(null);
   const [isCompanionVisible, setIsCompanionVisible] = useState(true);
-  const [storyState, setStoryState] = useState("start");
+  const [storyState, setStoryState] = useState("choice");
 
   return (
     <div style={deskBackgroundStyles} className="App">
@@ -52,7 +52,7 @@ function App() {
           </button>
           <button
             className="dev-button"
-            onClick={() => setStoryState("choices")}
+            onClick={() => setStoryState("choice")}
           >
             betterchoices
           </button>

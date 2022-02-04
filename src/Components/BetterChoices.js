@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { StoryContext } from "../Helpers/Context";
-import "./styles/Quiz.css";
-import { choices } from "../Data/BetterChoices";
+// import "./styles/Quiz.css";
+import { choices } from "../Data/BetterChoices.js";
 
 export default function BetterChoices() {
   const { storyState, setStoryState } = useContext(StoryContext);
@@ -9,11 +9,14 @@ export default function BetterChoices() {
   const [currentChoice, setCurrentChoice] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
+  const [showAnswerExpl, setShowAnswerExpl] = useState(false);
 
-  const handleChoiceOptionClick = (choice) => {
-    const { isCorrect } = choice;
+  const handleChoiceOptionClick = (options) => {
+    console.log("options", options);
+    const { isCorrect } = options;
 
-    setSelectedAnswer(choice);
+    setSelectedAnswer(options);
+    setShowAnswerExpl(true);
     if (isCorrect) {
       setScore(score + 1);
     }
@@ -23,6 +26,7 @@ export default function BetterChoices() {
       setTimeout(() => {
         setCurrentChoice(nextChoice);
         setSelectedAnswer(null);
+        setShowAnswerExpl(false);
       }, 2000);
     } else {
       setStoryState("start");
@@ -30,6 +34,7 @@ export default function BetterChoices() {
   };
 
   const getAnswerClass = (answer) => {
+    console.log("answer", answer);
     const baseClass = "answbtn";
 
     if (selectedAnswer) {
@@ -50,39 +55,32 @@ export default function BetterChoices() {
 
   return (
     <>
-      <div className="quizcontainer">
-        <div className="left-container">
-          <div id="questioncontainer">
-            <h1 id="question">What is better to use?</h1>
+      <div className="left-page">
+        <h1 id="question">What is better to use?</h1>
+        <div className="choice-section">
+          {choices[currentChoice].options.map((option) => (
             <img
-              className="quizimg"
-              src={choices[currentChoice].options}
-              alt=""
+              key={option.id}
+              width="200px"
+              height="150px"
+              disabled={selectedAnswer}
+              className={getAnswerClass(option)}
+              onClick={() => handleChoiceOptionClick(option)}
+              src={option.answer}
+              alt={option.answer}
             />
-            <div id="answer_buttons" className="answbtn_grid">
-              <div className="answer-section">
-                {choices[currentChoice].options.map((choice) => (
-                  <>
-                    <img
-                      key={choice.id}
-                      disabled={selectedAnswer}
-                      className={getAnswerClass(choice)}
-                      onClick={() => handleChoiceOptionClick(choice)}
-                      src={choice.options}
-                      alt=""
-                    />
-                  </>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="right-container score-section">
-          You scored {score} out of {choices.length}
+          ))}
         </div>
       </div>
-      <div className="turtle"></div>
+      <div className="right-page">
+        {showAnswerExpl ? <p>{choices[currentChoice].explanation}</p> : ""}
+        <div className="score-section">
+          <i class="fas fa-trophy"></i>
+          <h3>
+            You scored {score} out of {choices.length}
+          </h3>
+        </div>
+      </div>
     </>
   );
 }
