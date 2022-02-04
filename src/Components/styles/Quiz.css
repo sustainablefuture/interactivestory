@@ -1,3 +1,25 @@
+.left-page {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 82%;
+  width: 45%;
+  margin: 20px 60px 100px 80px;
+  padding: 20px;
+}
+
+.right-page {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  height: 82%;
+  width: 45%;
+  margin: 20px 90px 100px 50px;
+  padding: 20px;
+}
+
 .quizcontainer {
   width: 400px;
   max-width: 80%;
@@ -13,6 +35,12 @@
   margin: 20px 0;
 }
 
+.answbtn {
+  border: 1px solid #b94b77;
+  background-color: lightgrey;
+  margin: 3px;
+}
+
 .answbtn:hover {
   border-color: blueviolet;
 }
@@ -23,4 +51,9 @@
 
 .answbtn.wrong {
   background-color: red;
+}
+
+.choice-section {
+  display: flex;
+  flex-direction: row;
 }

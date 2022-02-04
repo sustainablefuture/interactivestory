@@ -9,6 +9,7 @@ import Chapter from "./Chapter";
 import Game from "./Game";
 import Quiz from "./Quiz";
 import Text from "./Text";
+import BetterChoices from "./BetterChoices";
 
 const bookBackgroundStyles = {
   backgroundImage: `url(${Book})`,
@@ -42,6 +43,7 @@ export default function MainContent({ selectChar, selectedChar, story }) {
         )}
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}
+        {storyState === "choice" && <BetterChoices />}
         {storyState === "game" && <Game />}
       </StoryContext.Provider>{" "}
       <button

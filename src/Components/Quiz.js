@@ -9,11 +9,13 @@ export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
+  const [showAnswerExpl, setShowAnswerExpl] = useState(false);
 
   const handleAnswerOptionClick = (answerOption) => {
     const { isCorrect } = answerOption;
 
     setSelectedAnswer(answerOption);
+    setShowAnswerExpl(true);
     if (isCorrect) {
       setScore(score + 1);
     }
@@ -23,7 +25,8 @@ export default function Quiz() {
       setTimeout(() => {
         setCurrentQuestion(nextQuestion);
         setSelectedAnswer(null);
-      }, 2000);
+        setShowAnswerExpl(false);
+      }, 5000);
     } else {
       setStoryState("start");
     }
@@ -50,28 +53,49 @@ export default function Quiz() {
 
   return (
     <>
-      <div className="quizcontainer">
-        <div id="questioncontainer">
-          <div id="question">{questions[currentQuestion].question}</div>
-          <div id="answer_buttons" className="answbtn_grid">
-            <div className="answer-section">
-              {questions[currentQuestion].answerOptions.map((answerOption) => (
-                <button
-                  disabled={selectedAnswer}
-                  className={getAnswerClass(answerOption)}
-                  onClick={() => handleAnswerOptionClick(answerOption)}
-                >
-                  {answerOption.answer}
-                </button>
-              ))}
+      <div className="left-page">
+        <div className="quizcontainer">
+          <div id="questioncontainer">
+            <h1 id="question">{questions[currentQuestion].question}</h1>
+            <img
+              className="quizimg"
+              src={questions[currentQuestion].img}
+              alt=""
+            />
+            <div id="answer_buttons" className="answbtn_grid">
+              <div className="answer-section">
+                {questions[currentQuestion].answerOptions.map(
+                  (answerOption) => (
+                    <>
+                      <button
+                        key={answerOption.id}
+                        disabled={selectedAnswer}
+                        className={getAnswerClass(answerOption)}
+                        onClick={() => handleAnswerOptionClick(answerOption)}
+                      >
+                        {answerOption.answer}
+                      </button>
+                    </>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="right-page">
+            {showAnswerExpl ? (
+              <p>{questions[currentQuestion].explanation}</p>
+            ) : (
+              ""
+            )}
+            <div className="score-section">
+              <i class="fas fa-trophy"></i>
+              <h3>
+                You scored {score} out of {questions.length}
+              </h3>
             </div>
           </div>
         </div>
-        <div className="score-section">
-          You scored {score} out of {questions.length}
-        </div>
       </div>
-      <div className="turtle"></div>
     </>
   );
 }
