@@ -140,11 +140,26 @@ const questions = [
     img: microplastic,
     question: "What is Microplastic?",
     answerOptions: [
-      { answer: "It turns into rock.", id: 1, isCorrect: false },
-      { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
-      { answer: "It comes up again.", id: 3, isCorrect: false },
       {
-        answer: "It breaks up into tiny pieces but does not disappear.",
+        answer:
+          "Soft plastic created when you melt hard plastic in the microwave",
+        id: 1,
+        isCorrect: false,
+      },
+      {
+        answer:
+          "Plastic particles so small that they can only be seen under a microscope",
+        id: 2,
+        isCorrect: false,
+      },
+      {
+        answer: "Plastic, that is only seeable in the water",
+        id: 3,
+        isCorrect: false,
+      },
+      {
+        answer:
+          "Plastic particles, which have the size between one and five millimeters.",
         id: 4,
         isCorrect: true,
       },

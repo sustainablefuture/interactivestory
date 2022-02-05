@@ -94,6 +94,10 @@ const story = [
   },
   {
     page: 7,
+    type: "choice",
+  },
+  {
+    page: 8,
     type: "game",
   },
 ];

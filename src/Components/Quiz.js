@@ -55,45 +55,37 @@ export default function Quiz() {
     <>
       <div className="left-page">
         <div className="quizcontainer">
-          <div id="questioncontainer">
-            <h1 id="question">{questions[currentQuestion].question}</h1>
-            <img
-              className="quizimg"
-              src={questions[currentQuestion].img}
-              alt=""
-            />
-            <div id="answer_buttons" className="answbtn_grid">
-              <div className="answer-section">
-                {questions[currentQuestion].answerOptions.map(
-                  (answerOption) => (
-                    <>
-                      <button
-                        key={answerOption.id}
-                        disabled={selectedAnswer}
-                        className={getAnswerClass(answerOption)}
-                        onClick={() => handleAnswerOptionClick(answerOption)}
-                      >
-                        {answerOption.answer}
-                      </button>
-                    </>
-                  )
-                )}
-              </div>
+          <h1 id="question">{questions[currentQuestion].question}</h1>
+          <img
+            className="quizimg"
+            src={questions[currentQuestion].img}
+            alt=""
+          />
+          <div id="answer_buttons" className="answbtn_grid">
+            <div className="answer-section">
+              {questions[currentQuestion].answerOptions.map((answerOption) => (
+                <>
+                  <button
+                    key={answerOption.id}
+                    disabled={selectedAnswer}
+                    className={getAnswerClass(answerOption)}
+                    onClick={() => handleAnswerOptionClick(answerOption)}
+                  >
+                    {answerOption.answer}
+                  </button>
+                </>
+              ))}
             </div>
           </div>
-          <div className="right-page">
-            {showAnswerExpl ? (
-              <p>{questions[currentQuestion].explanation}</p>
-            ) : (
-              ""
-            )}
-            <div className="score-section">
-              <i class="fas fa-trophy"></i>
-              <h3>
-                You scored {score} out of {questions.length}
-              </h3>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div className="right-page">
+        {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
+        <div className="score-section">
+          <i class="fas fa-trophy"></i>
+          <h3>
+            You scored {score} out of {questions.length}
+          </h3>
         </div>
       </div>
     </>

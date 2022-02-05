@@ -1,14 +1,15 @@
-import bottle from "../Images/bottle.png";
-import mehrweg from "../Images/mehrweg.png";
 import yoghurt from "../Images/yoghurt.png";
 import yoghurtglass from "../Images/yoghurtglass.png";
+import plasticbottle from "../Images/plasticbottle.png";
+import refillablebottle from "../Images/refillablebottle.png";
+import juicepack from "../Images/juice_pack.png";
 
 const choices = [
   {
     id: 1,
     options: [
-      { id: 1, answer: bottle, isCorrect: false },
-      { id: 2, answer: mehrweg, isCorrect: true },
+      { id: 1, answer: plasticbottle, isCorrect: false },
+      { id: 2, answer: refillablebottle, isCorrect: true },
     ],
     explanation:
       "Instead of using a plastic bottle, you can easily reuse the other one and refill water with it all the time",
@@ -25,8 +26,8 @@ const choices = [
   {
     id: 3,
     options: [
-      { id: 1, answer: yoghurtglass, isCorrect: true },
-      { id: 2, answer: yoghurt, isCorrect: false },
+      { id: 1, answer: juicepack, isCorrect: false },
+      { id: 2, answer: refillablebottle, isCorrect: true },
     ],
     explanation:
       "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",
@@ -34,8 +35,8 @@ const choices = [
   {
     id: 4,
     options: [
-      { id: 1, answer: yoghurtglass, isCorrect: true },
-      { id: 2, answer: yoghurt, isCorrect: false },
+      { id: 1, answer: plasticstraw, isCorrect: true },
+      { id: 2, answer: glasstraw, isCorrect: false },
     ],
     explanation:
       "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",

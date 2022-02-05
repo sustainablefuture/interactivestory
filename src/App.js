@@ -5,11 +5,14 @@ import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
 import Desk from "./Images/desk.jpg";
 import { story } from "./Data/Story";
+import pens from "./Images/pens.jpg";
+import desklight from "./Images/desk_light.jpg"; //bgpos 25 75
 
 const deskBackgroundStyles = {
-  backgroundImage: `url(${Desk})`,
+  backgroundImage: `url(${pens})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
+  backgroundPosition: "bottom",
 };
 
 function App() {
