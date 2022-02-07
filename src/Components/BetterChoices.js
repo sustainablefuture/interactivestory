@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { StoryContext } from "../Helpers/Context";
 // import "./styles/Quiz.css";
 import { choices } from "../Data/BetterChoices.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 export default function BetterChoices() {
   const { storyState, setStoryState } = useContext(StoryContext);
@@ -29,7 +31,7 @@ export default function BetterChoices() {
         setShowAnswerExpl(false);
       }, 2000);
     } else {
-      setStoryState("start");
+      setStoryState("game");
     }
   };
 
@@ -73,9 +75,16 @@ export default function BetterChoices() {
         </div>
       </div>
       <div className="right-page">
-        {showAnswerExpl ? <p>{choices[currentChoice].explanation}</p> : ""}
+        {showAnswerExpl ? (
+          <>
+            <p>{choices[currentChoice].explanation}</p>
+            <img src={choices[currentChoice].img} alt="" />
+          </>
+        ) : (
+          <></>
+        )}
         <div className="score-section">
-          <i class="fas fa-trophy"></i>
+          <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
           <h3>
             You scored {score} out of {choices.length}
           </h3>

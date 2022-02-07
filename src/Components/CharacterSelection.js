@@ -1,7 +1,7 @@
 import "./styles/CharacterSelection.css";
 import { characters } from "../Data/Characters";
 import CharacterChoice from "./CharacterChoice";
-import { Card } from "react-bootstrap";
+import { Card, ListGroup } from "react-bootstrap";
 
 export default function CharacterSelection({ selectChar, selectedChar }) {
   const clickCharacter = (id) => {
@@ -13,12 +13,14 @@ export default function CharacterSelection({ selectChar, selectedChar }) {
       <div className="left-page">
         <div className="characterContainer">
           <div className="charhead">
-            <h1>This is the beginning of a wonderful adventure.</h1>
-            <h2>With which character do you want to go into the adventure?</h2>
+            <h1>With which character do you want to go into the adventure?</h1>
           </div>
           <div className="charboxes">
             {characters.map((character) => (
-              <Card style={{ width: "18rem" }} key={character.id}>
+              <Card border="primary" key={character.id}>
+                <Card.Header as="h5" style={{ background: character.color }}>
+                  {character.name}
+                </Card.Header>
                 <Card.Img
                   key={character.id}
                   variant="top"
@@ -29,15 +31,20 @@ export default function CharacterSelection({ selectChar, selectedChar }) {
                   onClick={() => clickCharacter(character.id)}
                   id={character.id}
                 />
+
                 <Card.Body>
                   <Card.Title style={{ background: character.color }}>
-                    {character.name}
+                    What I like:
                   </Card.Title>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>{character.characteristics}</ListGroup.Item>
+                  </ListGroup>
                 </Card.Body>
               </Card>
             ))}
+
+            <p>Click on the character of your choice</p>
           </div>
-          <p>Click on the character of your choice</p>
         </div>
       </div>
       <div className="right-page">

@@ -29,7 +29,9 @@ export default function MainContent({ selectChar, selectedChar, story }) {
   return (
     <div style={bookBackgroundStyles} className="main-content">
       <StoryContext.Provider value={{ storyState, score, setScore }}>
-        {storyState === "start" && <Start />}
+        {storyState === "start" && (
+          <Start currentPage={currentPage} setCurrentPage={setCurrentPage} />
+        )}
         {storyState === "intro" && <Intro />}
         {storyState === "select" && (
           <CharacterSelection

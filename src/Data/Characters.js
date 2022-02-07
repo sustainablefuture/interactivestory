@@ -7,12 +7,14 @@ const characters = [
     name: "Lea",
     color: "#cb6ce6",
     img: girl,
+    characteristics: ["Playgrounds", "Guitar", "My friends"],
   },
   {
     id: 2,
     name: "Timi",
     color: "orange",
     img: boy,
+    characteristics: ["Football", "Skating", "Breakdance"],
   },
 ];
 

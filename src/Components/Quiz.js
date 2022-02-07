@@ -2,6 +2,8 @@ import React, { useContext, useState } from "react";
 import { StoryContext } from "../Helpers/Context";
 import "./styles/Quiz.css";
 import { questions } from "../Data/MCQuestions";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
 export default function Quiz() {
   const { storyState, setStoryState } = useContext(StoryContext);
@@ -82,7 +84,7 @@ export default function Quiz() {
       <div className="right-page">
         {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
         <div className="score-section">
-          <i class="fas fa-trophy"></i>
+          <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
           <h3>
             You scored {score} out of {questions.length}
           </h3>
