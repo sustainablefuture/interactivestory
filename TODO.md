@@ -1,0 +1,12 @@
+
+- Button for next page
+- Find images
+- Fill data
+- Style chapters / Integrate font
+- Page flip animation
+- Companion styling
+- Portrait styling
+- Closed book
+- Add background elements
+- CSS cleanup
+- deploy

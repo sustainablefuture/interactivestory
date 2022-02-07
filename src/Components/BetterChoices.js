@@ -12,7 +12,6 @@ export default function BetterChoices() {
   const [showAnswerExpl, setShowAnswerExpl] = useState(false);
 
   const handleChoiceOptionClick = (options) => {
-    console.log("options", options);
     const { isCorrect } = options;
 
     setSelectedAnswer(options);
@@ -34,7 +33,6 @@ export default function BetterChoices() {
   };
 
   const getAnswerClass = (answer) => {
-    console.log("answer", answer);
     const baseClass = "answbtn";
 
     if (selectedAnswer) {

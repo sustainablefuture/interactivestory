@@ -5,6 +5,7 @@ import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
 import Desk from "./Images/desk.jpg";
 import { story } from "./Data/Story";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 const deskBackgroundStyles = {
   backgroundImage: `url(${Desk})`,
@@ -13,7 +14,7 @@ const deskBackgroundStyles = {
 };
 
 function App() {
-  const [selectedChar, setSelectedChar] = useState(null);
+  const [selectedChar, setSelectedChar] = useLocalStorage("selectedChar", null);
   const [isCompanionVisible, setIsCompanionVisible] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const storyState = story[currentPage].type;

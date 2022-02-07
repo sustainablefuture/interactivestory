@@ -20,11 +20,12 @@ const bookBackgroundStyles = {
 export default function MainContent({ selectChar, selectedChar, story }) {
   const [score, setScore] = useLocalStorage("score", 0);
   const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
+
   if (currentPage > 6 || currentPage < 0) {
     setCurrentPage(0);
   }
+
   const storyState = story[currentPage].type;
-  console.log(currentPage);
 
   return (
     <div style={bookBackgroundStyles} className="main-content">
