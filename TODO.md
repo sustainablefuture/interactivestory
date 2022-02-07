@@ -3,9 +3,9 @@
 - Find images
 - Fill data
 - Style chapters / Integrate font
-- Page flip animation
 - Companion styling
 - Portrait styling
+- Page flip animation
 - Closed book
 - Add background elements
 - CSS cleanup

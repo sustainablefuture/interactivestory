@@ -1,6 +1,12 @@
 //images
-import boy from "../Images/boy.PNG";
-import girl from "../Images/girl.PNG";
+import excitedkids from "../Images/excited kids.png";
+import grandma from "../Images/gradnma.png";
+import beach from "../Images/beach.png";
+import dirtypark from "../Images/dirtypark.png";
+import kidscircle from "../Images/kidscircle.png";
+import tree from "../Images/tree.png";
+import trees from "../Images/trees.png";
+import kidshideandseek from "../Images/kidshideandseek.png";
 
 const story = [
   {
@@ -24,7 +30,7 @@ const story = [
     content: [
       {
         type: "image",
-        image: boy,
+        image: excitedkids,
       },
       {
         type: "paragraph",
@@ -36,27 +42,36 @@ const story = [
       },
       {
         type: "image",
-        image: girl,
+        image: grandma,
       },
       {
         type: "paragraph",
         text: "When they arrive at the park, <character> and <his/her> friends start running toward the playground to play together. Grandma Ania watches them run past her with a caring smile on her face.",
       },
       {
+        type: "image",
+        image: kidshideandseek,
+      },
+      {
         type: "paragraph",
         text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”. <he/she> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home.”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
+      },
+      {
+        type: "image",
+        image: dirtypark,
       },
       {
         type: "paragraph",
         text: "She shakes her head and puts her soft hand on <character>’s shoulder, saying: “You’re right that the park isn’t so nice to play in today. It seems to get worse every week we come here. You know what, why don’t you tell your friends to come here and I will tell you all a story.”",
       },
-      {
-        type: "image",
-        image: boy,
-      },
+
       {
         type: "paragraph",
         text: "Agreeing with a smile, <character> goes to get <his/her> friends and they all sit in front of the grandmother. She takes a deep breath and starts: “You know kids, when I was your age, I was also living around here.”. Raising her hand in front of her, she points toward a house a bit further down the street and resumes: “This was the house of my parents. I used to come here to play, just like you. There was only a swing back then, but we loved to come here and play. I even remember some of the trees that are still here.”. The children look at Ania with dreamy eyes, captured by the idea of something so far in the past.",
+      },
+      {
+        type: "image",
+        image: tree,
       },
       {
         type: "paragraph",
@@ -68,19 +83,19 @@ const story = [
       },
       {
         type: "image",
-        image: girl,
+        image: trees,
       },
       {
         type: "paragraph",
         text: "<character> and <his/her> friends go back to the playground and they start talking: “My grandma is really sad now, I wish we could do something to cheer her up.”. The friends shake their heads in agreement and Sam answers: “Yes, I also feel sad from that, but what can we do?”. William, another one of their friends, adds: “Maybe we can ask our parents if they have an idea.”",
       },
       {
-        type: "paragraph",
-        text: "After agreeing that this would be a smart idea, all the friends go back to Ania and start heading home. On the way, they feel a bit sad and don’t talk much. Ania reflects on a greener past while <character> hopes <he/she> will be able to find a solution to make <his/her> grandmother happy again.",
+        type: "image",
+        image: kidscircle,
       },
       {
-        type: "image",
-        image: boy,
+        type: "paragraph",
+        text: "After agreeing that this would be a smart idea, all the friends go back to Ania and start heading home. On the way, they feel a bit sad and don’t talk much. Ania reflects on a greener past while <character> hopes <he/she> will be able to find a solution to make <his/her> grandmother happy again.",
       },
     ],
   },
@@ -94,6 +109,10 @@ const story = [
   },
   {
     page: 7,
+    type: "choice",
+  },
+  {
+    page: 8,
     type: "game",
   },
 ];

@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./styles/Chapter.css";
 
 // determines the number of items shown per slide
-const PAGE_SIZE = 2;
+const PAGE_SIZE = 6;
 
 export default function Chapter({ chapter, currentPage, setCurrentPage }) {
   const [currentChapterPage, setCurrentChapterPage] = useState(1);
@@ -40,7 +40,7 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
 
           if (leftData.type === "image") {
             // add a alt element
-            return <img src={leftData.image}></img>;
+            return <img src={leftData.image} alt=""></img>;
           }
         })}
       </div>
@@ -52,7 +52,7 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
 
           if (rightData.type === "image") {
             // add a alt element
-            return <img src={rightData.image}></img>;
+            return <img src={rightData.image} alt=""></img>;
           }
         })}
       </div>

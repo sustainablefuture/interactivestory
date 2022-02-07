@@ -1,5 +1,6 @@
 import { characters } from "../Data/Characters";
 import "./styles/CharacterChoice.css";
+import yay from "../Images/yay.png";
 
 export default function CharacterChoice({ selectedChar }) {
   const selectedCharInfo = characters.find(({ id }) => selectedChar === id);
@@ -7,6 +8,7 @@ export default function CharacterChoice({ selectedChar }) {
     <div className="character-choice">
       <h1>{selectedCharInfo?.name}</h1>
       <img alt={selectedCharInfo?.name} src={selectedCharInfo?.img} />
+      {selectedChar ? <img alt="yay" src={yay} width="150px" /> : ""}
     </div>
   );
 }
