@@ -1,5 +1,12 @@
-export default function Game() {
-  return <div className="menu">This is a Game</div>;
-}
+import ParkGame from "./games/ParkGame/components/ParkGame";
+import { RecoilRoot } from "recoil";
 
-// checked
+export default function Game() {
+  return (
+    <div className="game-screen">
+      <RecoilRoot>
+        <ParkGame />
+      </RecoilRoot>
+    </div>
+  );
+}

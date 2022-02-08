@@ -15,8 +15,6 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
 
   const slideData = chapter.content.slice(firstDataIndex, lastDataIndex);
 
-  console.log(slideData);
-
   const leftPageData =
     slideData.length > PAGE_SIZE / 2
       ? slideData.slice(0, PAGE_SIZE / 2)
@@ -58,7 +56,7 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
           }
         })}
       </div>
-      <button onClick={onPageChange}>next page</button>
+      {/* <button onClick={onPageChange}>next page</button> */}
     </>
   );
 }
