@@ -8,6 +8,7 @@ export default function Quiz({ currentPage, setCurrentPage, quiz }) {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [showAnswerExpl, setShowAnswerExpl] = useState(false);
+  const [taskDone, setTaskDone] = useState(false);
   const questions = quiz.content;
 
   const handleAnswerOptionClick = (answerOption) => {
@@ -26,6 +27,8 @@ export default function Quiz({ currentPage, setCurrentPage, quiz }) {
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
       }, 5000);
+    } else {
+      setTaskDone(true);
     }
   };
 
@@ -78,19 +81,41 @@ export default function Quiz({ currentPage, setCurrentPage, quiz }) {
       </div>
       <div className="right-page">
         <div className="score-section">
-          <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
-          <h3>
-            You scored {score} out of {questions.length}
-          </h3>
+          <FontAwesomeIcon
+            icon={faTrophy}
+            size="lg"
+            flip="horizontal"
+            className="trophy"
+          />
+          <h2 className="score">
+            You scored <strong>{score}</strong> out of{" "}
+            <strong>{questions.length}</strong> Points{" "}
+          </h2>
         </div>
-        {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
+        {showAnswerExpl ? (
+          <div className="explanation_section">
+            <h3>Explanation:</h3>
+            <p className="explanation">
+              {questions[currentQuestion].explanation}
+            </p>
+          </div>
+        ) : (
+          ""
+        )}
+        {taskDone && <h1 className="quiz-done">Well Done!</h1>}
       </div>
-      <button
-        className="progress-button"
-        onClick={() => setCurrentPage(currentPage + 1)}
-      >
-        next page
-      </button>
+      {taskDone ? (
+        <>
+          <button
+            className="progress-button"
+            onClick={() => setCurrentPage(currentPage + 1)}
+          >
+            next page
+          </button>
+        </>
+      ) : (
+        ""
+      )}
     </>
   );
 }

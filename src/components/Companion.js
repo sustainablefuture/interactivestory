@@ -5,9 +5,9 @@ export default function Companion() {
   return (
     <div className="companion-frame">
       <Popover className="popover">
-        <Popover.Panel className="thought">
+        {/* <Popover.Panel className="thought">
           I'm the bubble text Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum
-        </Popover.Panel>
+        </Popover.Panel> */}
         <Popover.Button className="companion"></Popover.Button>
       </Popover>
     </div>
