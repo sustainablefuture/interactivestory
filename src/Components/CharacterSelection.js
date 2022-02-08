@@ -16,7 +16,7 @@ export default function CharacterSelection({
   return (
     <>
       <div className="left-page">
-        <div className="characterContainer">
+        <div className="characterContainer selection-left">
           <div className="charhead">
             <h1>With which character do you want to go into the adventure?</h1>
           </div>
@@ -42,17 +42,22 @@ export default function CharacterSelection({
                     What I like:
                   </Card.Title>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>{character.characteristics}</ListGroup.Item>
+                    <ListGroup.Item>
+                      <ul className="selection-list">
+                        {character.characteristics.map((characteristic) => (
+                          <li>{characteristic}</li>
+                        ))}
+                      </ul>
+                    </ListGroup.Item>
                   </ListGroup>
                 </Card.Body>
               </Card>
             ))}
-
-            <p>Click on the character of your choice</p>
           </div>
         </div>
+        <h2>Click on the character of your choice</h2>
       </div>
-      <div className="right-page">
+      <div className="right-page selection-right">
         <div className="">
           <h2>You selected:</h2>
           {<CharacterChoice selectedChar={selectedChar} />}

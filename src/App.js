@@ -20,7 +20,10 @@ const deskBackgroundStyles = {
 function App() {
   const [isStarted, setIsStarted] = useState(false);
   const [selectedChar, setSelectedChar] = useLocalStorage("selectedChar", null);
-  const [isCompanionVisible, setIsCompanionVisible] = useState(true);
+  const [isCompanionVisible, setIsCompanionVisible] = useLocalStorage(
+    "companion",
+    false
+  );
   const [currentPage, setCurrentPage] = useState(0);
   const storyState = story[currentPage].type;
   // scoreState to add
@@ -36,13 +39,15 @@ function App() {
               storyState={storyState}
               selectChar={setSelectedChar}
               selectedChar={selectedChar}
+              setSelectedChar={setSelectedChar}
               story={story}
+              setIsCompanionVisible={setIsCompanionVisible}
             />
             <div className="bottom-left"></div>
           </div>
           <div className="right-container">
             {isCompanionVisible ? <Companion /> : <></>}
-            <CharacterPortrait selectedChar={selectedChar} />
+            {selectedChar && <CharacterPortrait selectedChar={selectedChar} />}
           </div>
           <img className="pencil" src={pencil} alt="pencil"></img>
           <img className="apple" src={apple} alt="apple"></img>

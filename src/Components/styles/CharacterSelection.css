@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .charhead {
@@ -14,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: space-between;
+  margin-top: 10%;
 }
 
 .charbox {
@@ -31,5 +31,21 @@
 }
 
 .chosenCard {
-  border: 3px solid black;
+  border: 5px solid black;
+}
+
+.selection-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection-left {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 5% 0;
+}
+
+.selection-list {
+  list-style-type: none;
 }

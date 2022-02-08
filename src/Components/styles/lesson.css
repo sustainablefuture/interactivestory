@@ -1,0 +1,13 @@
+.lesson-left {
+    display: flex;
+    align-items: center;
+}
+
+.lesson-right {
+    padding: 12% 4% 5% 0;
+}
+
+.lesson-title {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}

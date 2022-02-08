@@ -7,6 +7,7 @@ import Game from "./Game";
 import Lesson from "./Lesson";
 import Quiz from "./Quiz";
 import BetterChoices from "./BetterChoices";
+import Restart from "./Restart";
 
 const bookBackgroundStyles = {
   backgroundImage: `url(${Book})`,
@@ -14,7 +15,13 @@ const bookBackgroundStyles = {
   backgroundSize: "contain",
 };
 
-export default function MainContent({ selectChar, selectedChar, story }) {
+export default function MainContent({
+  selectChar,
+  selectedChar,
+  setSelectedChar,
+  story,
+  setIsCompanionVisible,
+}) {
   // score to be implemented
   // const [score, setScore] = useLocalStorage("score", 0);
   const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
@@ -45,6 +52,7 @@ export default function MainContent({ selectChar, selectedChar, story }) {
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           selectedChar={selectedChar}
+          setIsCompanionVisible={setIsCompanionVisible}
         />
       )}
       {storyState === "lesson" && (
@@ -64,6 +72,7 @@ export default function MainContent({ selectChar, selectedChar, story }) {
       {storyState === "choice" && (
         <BetterChoices
           choices={story[currentPage].content}
+          currentPage={currentPage}
           setCurrentPage={setCurrentPage}
         />
       )}
@@ -72,6 +81,13 @@ export default function MainContent({ selectChar, selectedChar, story }) {
           name={story[currentPage].name}
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
+        />
+      )}
+      {storyState === "restart" && (
+        <Restart
+          setCurrentPage={setCurrentPage}
+          setSelectedChar={setSelectedChar}
+          setIsCompanionVisible={setIsCompanionVisible}
         />
       )}
       {/* dev buttons for demo + development */}

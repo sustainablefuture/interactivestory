@@ -2,7 +2,11 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-export default function BetterChoices({ choices, setCurrentPage }) {
+export default function BetterChoices({
+  choices,
+  currentPage,
+  setCurrentPage,
+}) {
   const [currentChoice, setCurrentChoice] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
@@ -81,8 +85,11 @@ export default function BetterChoices({ choices, setCurrentPage }) {
           <></>
         )}
       </div>
-      <button className="progress-button" onClick={() => setCurrentPage(0)}>
-        Restart the adventure
+      <button
+        className="progress-button"
+        onClick={() => setCurrentPage(currentPage + 1)}
+      >
+        Next Page
       </button>
     </>
   );
