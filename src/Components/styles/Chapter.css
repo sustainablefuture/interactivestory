@@ -1,4 +1,53 @@
 .chapter-title {
     align-self: flex-start;
     justify-self: flex-start;
+    margin-bottom: 5%;
+}
+
+.chapter-left {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4%;
+}
+
+.chapter-right {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 3% 5% 1%;
+}
+
+.companion-activation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+
+.companion-button {
+    height: 50px;
+    border-radius: 6px;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: blue;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+.companion-button:hover {
+
+    border: none;
+    background: none;
+    color: blue !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
 }

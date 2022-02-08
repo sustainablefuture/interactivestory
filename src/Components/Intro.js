@@ -6,22 +6,23 @@ import "./styles/Intro.css";
 export default function Intro({ currentPage, setCurrentPage }) {
   return (
     <>
-      <div className="left-page">
+      <div className="left-page intro-left">
         <h1>Hey there!</h1>
         <h2> Do you wanna come on an adventure with us?</h2>
         <img src={kidsparkplace} width="400px" alt="" />
       </div>
-      <div className="right-page">
-        <h1>"Hahaha, catch me", says Timi</h1>
+      <div className="right-page intro-right">
+        <h1>"Hahaha, catch me", says Timmy</h1>
         <img src={kidswater} width="300px" alt="" />
         <p>
-          Do you like playing with your friends? So do Timi and Lea. Today you
+          Do you like playing with your friends? So do Timmy and Lea. Today, you
           will follow them and their friends through their adventure and learn
           about the challenges they are facing while following the story, answer
           quizes and playing games.
           <br></br>
-          So let's get started.
+          <br></br>
         </p>
+        <h2>So let's get started!</h2>
         <div className="introframe">
           <img src={illplastic} width="200px" alt="" />
         </div>

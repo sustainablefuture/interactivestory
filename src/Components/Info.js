@@ -1,11 +1,11 @@
-import "./styles/lesson.css";
+import { knowledgedata } from "../Data/KnowledgeData";
 
-export default function Text({ lesson, currentPage, setCurrentPage }) {
+export default function Text() {
   return (
     <>
-      <div className="left-page lesson-left">
-        <h1 className="lesson-title">{`Lesson: ${lesson.title}`}</h1>
-        {lesson.content.map((leftContent) => {
+      <div className="left-page">
+        <h1>Lesson</h1>
+        {knowledgedata.map((leftContent) => {
           if (leftContent.type === "image") {
             return (
               <img src={leftContent.image} alt="" key={leftContent.id}></img>
@@ -17,8 +17,8 @@ export default function Text({ lesson, currentPage, setCurrentPage }) {
           return <></>;
         })}
       </div>
-      <div className="right-page lesson-right">
-        {lesson.content.map((rightContent) => {
+      <div className="right-page">
+        {knowledgedata.map((rightContent) => {
           if (rightContent.type === "video") {
             return (
               <iframe
@@ -35,9 +35,6 @@ export default function Text({ lesson, currentPage, setCurrentPage }) {
           return <></>;
         })}
       </div>
-      <button className="progress-button" onClick={() => setCurrentPage(0)}>
-        Restart the adventure
-      </button>
     </>
   );
 }

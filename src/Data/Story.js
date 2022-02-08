@@ -43,6 +43,7 @@ import pressedjuice from "../Images/pressedjuice.png";
 import homemadeyoghurt from "../Images/homemadeyoghurt.png";
 import refill from "../Images/refill.png";
 import applebox from "../Images/applebox.png";
+import fishPlastic from "../Images/fish_plastic.png";
 
 const story = [
   {
@@ -164,7 +165,15 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "Sam tells them : “Look! Something weird is floating in the water over there, next to the big rock.”. They all go and see that many water bottles are floating on the surface. There is also a little fish swimming through the trash and trying to eat the plastic pieces. William says : “<character>, we must not let it eat that! It’s not food and I think it’s dangerous to eat.”.",
+        text: "Sam tells them : “Look! Something weird is floating in the water over there, next to the big rock.”. They all go and see that many water bottles are floating on the surface. There is also a little fish swimming through the trash and trying to eat the plastic pieces.",
+      },
+      {
+        type: "paragraph",
+        text: "William says : “<character>, we must not let it eat that! It’s not food and I think it’s dangerous to eat.”.",
+      },
+      {
+        type: "image",
+        image: fishPlastic,
       },
     ],
   },
@@ -201,6 +210,7 @@ const story = [
   {
     page: 7,
     type: "lesson",
+    title: "What is plastic?",
     content: [
       {
         type: "image",
@@ -325,6 +335,10 @@ const story = [
         type: "paragraph",
         text: "At the end of the day, before they have to go back home, <companion> tells them : “You are my friends now, if you ever need me and are near water, just call my name and I’ll be there for you, always!”. Knowing that they had made a new friend, <character> and the friends went back home happy.",
       },
+      {
+        type: "trigger",
+        name: "companion",
+      },
     ],
   },
   {
@@ -338,6 +352,7 @@ const story = [
         type: "image",
         image: raisedHand,
       },
+      {},
       {
         type: "paragraph",
         text: "On Monday, it’s time to go back to school. <character> is eager to talk to Mrs Miller about <his/her> about what they could do to make the park a better place. At the beginning of the class, <he/she>  raises <his/her> hand and asks: “Mrs Miller, I went to the park the other day and it was full of trash and it was the same thing in the water at the beach. It makes me really sad.”.",
@@ -351,6 +366,7 @@ const story = [
   {
     page: 11,
     type: "lesson",
+    title: "What is microplastic?",
     content: [
       {
         type: "image",
@@ -557,6 +573,11 @@ const story = [
         type: "paragraph",
         text: "<character> turns to <his/her> friends and other classmates to tell them: “Remember what we learned about recycling, don’t throw everything in the garbage.” <He/She> then points the different bins to them.",
       },
+      {},
+      {
+        type: "image",
+        image: dirtypark,
+      },
     ],
   },
   {
@@ -676,6 +697,7 @@ const story = [
   },
   {
     page: 18,
+<<<<<<< HEAD
     type: "lesson",
     content: [
       {
@@ -695,6 +717,9 @@ const story = [
         link: "https://www.youtube.com/embed/ry1rFCMqm4M",
       },
     ],
+=======
+    type: "restart",
+>>>>>>> c700c8e4d117b427865820fb6a93479b1d8956dc
   },
 ];
 

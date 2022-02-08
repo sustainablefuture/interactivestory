@@ -2,6 +2,7 @@ import { useState } from "react";
 import { v4 } from "uuid";
 import { TIMMY_TEXT, LEA_TEXT, COMPANION_NAME } from "../Data/constants";
 import "./styles/Chapter.css";
+import CompanionActivation from "./CompanionActivation";
 
 // determines the number of items shown per slide
 const PAGE_SIZE = 4;
@@ -11,6 +12,7 @@ export default function Chapter({
   currentPage,
   setCurrentPage,
   selectedChar,
+  setIsCompanionVisible,
 }) {
   const [currentChapterPage, setCurrentChapterPage] = useState(1);
   const numberOfItems = chapter.content.length;
@@ -54,7 +56,7 @@ export default function Chapter({
 
   return (
     <>
-      <div className="left-page">
+      <div className="left-page chapter-left">
         <h1 className="chapter-title">{`Chapter ${chapter.chapter_number}: ${chapter.title}`}</h1>
         {leftPageData.map((leftData) => {
           if (leftData.type === "paragraph") {
@@ -69,7 +71,7 @@ export default function Chapter({
           }
         })}
       </div>
-      <div className="right-page">
+      <div className="right-page chapter-right">
         {rightPageData.map((rightData) => {
           if (rightData.type === "paragraph") {
             const formatedText = formatText(rightData.text);
@@ -80,6 +82,14 @@ export default function Chapter({
           if (rightData.type === "image") {
             return (
               <img key={v4()} src={rightData.image} alt={rightData.image}></img>
+            );
+          }
+
+          if (rightData.type === "trigger") {
+            return (
+              <CompanionActivation
+                setIsCompanionVisible={setIsCompanionVisible}
+              />
             );
           }
         })}
