@@ -102,10 +102,10 @@ export default function Quiz({ currentPage, setCurrentPage, quiz }) {
         ) : (
           ""
         )}
+        {taskDone && <h1 className="quiz-done">Well Done!</h1>}
       </div>
       {taskDone ? (
         <>
-          <h1 className="quiz-done">Well Done!</h1>
           <button
             className="progress-button"
             onClick={() => setCurrentPage(currentPage + 1)}

@@ -35,8 +35,11 @@ export default function Text({ lesson, currentPage, setCurrentPage }) {
           return <></>;
         })}
       </div>
-      <button className="progress-button" onClick={() => setCurrentPage(0)}>
-        Restart the adventure
+      <button
+        className="progress-button"
+        onClick={() => setCurrentPage(currentPage + 1)}
+      >
+        next page
       </button>
     </>
   );

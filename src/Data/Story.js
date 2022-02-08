@@ -697,8 +697,8 @@ const story = [
   },
   {
     page: 18,
-<<<<<<< HEAD
     type: "lesson",
+    title: "Take action!",
     content: [
       {
         id: 7,
@@ -717,9 +717,9 @@ const story = [
         link: "https://www.youtube.com/embed/ry1rFCMqm4M",
       },
     ],
-=======
+  },
+  {
     type: "restart",
->>>>>>> c700c8e4d117b427865820fb6a93479b1d8956dc
   },
 ];
 
