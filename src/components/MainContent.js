@@ -21,7 +21,7 @@ export default function MainContent({ selectChar, selectedChar, story }) {
   const [score, setScore] = useLocalStorage("score", 0);
   const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
 
-  if (currentPage > 7 || currentPage < 0) {
+  if (currentPage > story.length - 1 || currentPage < 0) {
     setCurrentPage(0);
   }
 
@@ -45,12 +45,13 @@ export default function MainContent({ selectChar, selectedChar, story }) {
             chapter={story[currentPage]}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
+            selectedChar={selectedChar}
           />
         )}
         {storyState === "text" && <Text />}
         {storyState === "quiz" && <Quiz />}
         {storyState === "choice" && <BetterChoices />}
-        {storyState === "game" && <Game />}
+        {storyState === "game" && <Game name={story[currentPage].name} />}
       </StoryContext.Provider>{" "}
       <button
         onClick={() => setCurrentPage(currentPage - 1)}

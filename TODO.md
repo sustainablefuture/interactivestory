@@ -1,12 +1,9 @@
-
 - Button for next page
-- Find images
-- Fill data
-- Style chapters / Integrate font
 - Companion styling
 - Portrait styling
+- Style chapters / Integrate font
+- deploy
 - Page flip animation
 - Closed book
 - Add background elements
 - CSS cleanup
-- deploy

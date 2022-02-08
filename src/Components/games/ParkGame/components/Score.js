@@ -27,7 +27,7 @@ export default function Score() {
         </div>
       ) : (
         <>
-          <span className="score">{score ? score : 0}</span>
+          <span className="score">{score && `${4 - score} more to go!`}</span>
         </>
       )}
     </div>

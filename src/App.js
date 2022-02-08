@@ -10,7 +10,7 @@ import pens from "./Images/pens.jpg";
 import desklight from "./Images/desk_light.jpg"; //bgpos 25 75
 
 const deskBackgroundStyles = {
-  backgroundImage: `url(${pens})`,
+  backgroundImage: `url(${Desk})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "bottom",

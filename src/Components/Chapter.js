@@ -1,11 +1,17 @@
 import { useState } from "react";
-
+import { v4 } from "uuid";
+import { TIMMY_TEXT, LEA_TEXT, COMPANION_NAME } from "../Data/constants";
 import "./styles/Chapter.css";
 
 // determines the number of items shown per slide
 const PAGE_SIZE = 6;
 
-export default function Chapter({ chapter, currentPage, setCurrentPage }) {
+export default function Chapter({
+  chapter,
+  currentPage,
+  setCurrentPage,
+  selectedChar,
+}) {
   const [currentChapterPage, setCurrentChapterPage] = useState(1);
   const numberOfItems = chapter.content.length;
   const numberOfPages = Math.ceil(numberOfItems / PAGE_SIZE);
@@ -23,10 +29,27 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
 
   const onPageChange = () => {
     if (currentChapterPage === numberOfPages) {
+      setCurrentChapterPage(1);
       setCurrentPage(currentPage + 1);
       return;
     }
     setCurrentChapterPage(currentChapterPage + 1);
+  };
+
+  const formatText = (text) => {
+    const character = selectedChar - 1 ? TIMMY_TEXT : LEA_TEXT;
+
+    const formatedText = text
+      .replaceAll("<character>", character["<character>"])
+      .replaceAll("<He/She>", character["<He/She>"])
+      .replaceAll("<he/she>", character["<he/she>"])
+      .replaceAll("<His/Her>", character["<His/Her>"])
+      .replaceAll("<his/her>", character["<his/her>"])
+      .replaceAll("<Him/Her>", character["<Him/Her>"])
+      .replaceAll("<him/her>", character["<him/her>"])
+      .replaceAll("<companion>", COMPANION_NAME);
+
+    return formatedText;
   };
 
   return (
@@ -35,28 +58,33 @@ export default function Chapter({ chapter, currentPage, setCurrentPage }) {
         <h1 className="chapter-title">{`Chapter ${chapter.chapter_number}: ${chapter.title}`}</h1>
         {leftPageData.map((leftData) => {
           if (leftData.type === "paragraph") {
-            return <p>{leftData.text}</p>;
+            const formatedText = formatText(leftData.text);
+            return <p key={v4()}>{formatedText}</p>;
           }
 
           if (leftData.type === "image") {
-            // add a alt element
-            return <img src={leftData.image} alt=""></img>;
+            return (
+              <img key={v4()} src={leftData.image} alt={leftData.image}></img>
+            );
           }
         })}
       </div>
       <div className="right-page">
         {rightPageData.map((rightData) => {
           if (rightData.type === "paragraph") {
-            return <p>{rightData.text}</p>;
+            const formatedText = formatText(rightData.text);
+
+            return <p key={v4()}>{formatedText}</p>;
           }
 
           if (rightData.type === "image") {
-            // add a alt element
-            return <img src={rightData.image} alt=""></img>;
+            return (
+              <img key={v4()} src={rightData.image} alt={rightData.image}></img>
+            );
           }
         })}
       </div>
-      {/* <button onClick={onPageChange}>next page</button> */}
+      <button onClick={onPageChange}>next page</button>
     </>
   );
 }
