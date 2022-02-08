@@ -6,6 +6,10 @@ export default function Game() {
     <div className="game-screen">
       <RecoilRoot>
         <ParkGame />
+        <iframe
+          src="https://jennyy89.github.io/whackabottle/"
+          title="whackabottlegame"
+        ></iframe>
       </RecoilRoot>
     </div>
   );
