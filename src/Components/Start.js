@@ -1,14 +1,10 @@
-import { useContext } from "react";
-// import { StoryContext } from "../Helpers/Context";
 import "./styles/Start.css";
 
-export default function Intro({ currentPage, setCurrentPage, setIsStarted }) {
-  // const { setStoryState } = useContext(StoryContext);
-
+export default function Intro({ setIsStarted }) {
   const onClick = () => {
-    setCurrentPage(currentPage + 1);
     setIsStarted(true);
   };
+
   return (
     <div className="wrapper">
       <div className="waves">

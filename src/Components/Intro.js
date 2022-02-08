@@ -3,7 +3,7 @@ import kidswater from "../Images/kidswater.png";
 import illplastic from "../Images/illplastic.png";
 import "./styles/Intro.css";
 
-export default function Intro() {
+export default function Intro({ currentPage, setCurrentPage }) {
   return (
     <>
       <div className="left-page">
@@ -26,6 +26,12 @@ export default function Intro() {
           <img src={illplastic} width="200px" alt="" />
         </div>
       </div>
+      <button
+        className="progress-button"
+        onClick={() => setCurrentPage(currentPage + 1)}
+      >
+        next page
+      </button>
     </>
   );
 }

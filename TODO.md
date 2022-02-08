@@ -1,9 +1,21 @@
-- Button for next page
-- Companion styling
-- Portrait styling
-- Style chapters / Integrate font
+
+- Restart component
 - deploy
-- Page flip animation
-- Closed book
-- Add background elements
 - CSS cleanup
+- refactor cleanup
+
+- CSS:
+    -Intro
+    -Lessons
+
+Jenny:
+    -Start page
+    -Quiz
+    -Better Choice
+    -Last page
+
+Guillaume:
+    -Restart page
+    -Character select
+    -Chapters
+

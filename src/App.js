@@ -3,9 +3,10 @@ import { useState } from "react";
 import CharacterPortrait from "./Components/CharacterPortrait";
 import Companion from "./Components/Companion";
 import MainContent from "./Components/MainContent";
-import Desk from "./Images/desk.jpg";
 import { story } from "./Data/Story";
 import desknew from "./Images/desknew.png";
+import apple from "./Images/top_apple.png";
+import pencil from "./Images/pencil.png";
 import Start from "./Components/Start";
 import useLocalStorage from "./hooks/useLocalStorage";
 
@@ -22,6 +23,7 @@ function App() {
   const [isCompanionVisible, setIsCompanionVisible] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
   const storyState = story[currentPage].type;
+  // scoreState to add
 
   return (
     <>
@@ -39,10 +41,11 @@ function App() {
             <div className="bottom-left"></div>
           </div>
           <div className="right-container">
-            {/* 1 - modified <Companion /> to show it if the state is true */}
             {isCompanionVisible ? <Companion /> : <></>}
             <CharacterPortrait selectedChar={selectedChar} />
           </div>
+          <img className="pencil" src={pencil} alt="pencil"></img>
+          <img className="apple" src={apple} alt="apple"></img>
         </div>
       ) : (
         <Start
@@ -57,4 +60,3 @@ function App() {
 export default App;
 
 // checked
-// useLocalStorage hook needed to store selectedChar, isCompanionVisible, storyState, storyProgress(tbd)

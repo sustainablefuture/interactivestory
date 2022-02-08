@@ -1,4 +1,3 @@
-//images
 import excitedkids from "../Images/excited kids.png";
 import grandma from "../Images/gradnma.png";
 import beach from "../Images/beach.png";
@@ -17,22 +16,45 @@ import happyGrandma from "../Images/happy_grandma.jpg";
 import cleanPark from "../Images/kidsparkplace.png";
 import recycling from "../Images/recycling.png";
 import kidsWalking from "../Images/kids_walking.png";
+import trashpark from "../Images/trashpark.png";
+import microplasticbag from "../Images/microplasticbag.png";
+import plastic from "../Images/plastic.jpg";
+import singleuse from "../Images/single-use.jpg";
+import balls from "../Images/balls.jpg";
+import brush from "../Images/brush.jpg";
+import bottlebeach from "../Images/bottlebeach.jpg";
+import ocean from "../Images/ocean.jpg";
+import microplastic from "../Images/microplastic.jpg";
+import plasticocean from "../Images/plasticocean.jpg";
+import micro from "../Images/micro.jpg";
+import turtle from "../Images/turtle.jpg";
+import yoghurt from "../Images/yoghurt.png";
+import yoghurtglass from "../Images/yoghurtglass.png";
+import plasticbottle from "../Images/plasticbottle.png";
+import refillablebottle from "../Images/refillablebottle.png";
+import juicepack from "../Images/juice_pack.png";
+import juiceglass from "../Images/juice_glass.png";
+import plasticstraw from "../Images/plasticstraw.png";
+import glasstraw from "../Images/glasstraw.png";
+import apple from "../Images/apple.png";
+import applewrapped from "../Images/applewrapped.png";
+import pastastraw from "../Images/pastastraw.jpeg";
+import pressedjuice from "../Images/pressedjuice.png";
+import homemadeyoghurt from "../Images/homemadeyoghurt.png";
+import refill from "../Images/refill.png";
+import applebox from "../Images/applebox.png";
 
 const story = [
   {
     page: 1,
-    type: "start",
-  },
-  {
-    page: 2,
     type: "intro",
   },
   {
-    page: 3,
+    page: 2,
     type: "select",
   },
   {
-    page: 4,
+    page: 3,
     type: "chapter",
     title: "An afternoon at the park",
     chapter_number: "1",
@@ -64,7 +86,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”. <he/she> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home. Some people have even thrown their empty water bottles there”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
+        text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”.",
+      },
+      {
+        type: "paragraph",
+        text: "<He/She> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home. Some people have even thrown their empty water bottles there”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
       },
       {
         type: "image",
@@ -77,7 +103,11 @@ const story = [
 
       {
         type: "paragraph",
-        text: "Agreeing with a smile, <character> goes to get <his/her> friends and they all sit in front of the grandmother. She takes a deep breath and starts: “You know kids, when I was your age, I was also living around here.”. Raising her hand in front of her, she points toward a house a bit further down the street and resumes: “This was the house of my parents. I used to come here to play, just like you. There was only a swing back then, but we loved to come here and play. I even remember some of the trees that are still here.”. The children look at Ania with dreamy eyes, captured by the idea of something so far in the past.",
+        text: "Agreeing with a smile, <character> goes to get <his/her> friends and they all sit in front of the grandmother. She takes a deep breath and starts: “You know kids, when I was your age, I was also living around here.”. Raising her hand in front of her, she points toward a house a bit further down the street and resumes: ",
+      },
+      {
+        type: "paragraph",
+        text: "“This was the house of my parents. I used to come here to play, just like you. There was only a swing back then, but we loved to come here and play. I even remember some of the trees that are still here.”. The children look at Ania with dreamy eyes, captured by the idea of something so far in the past.",
       },
       {
         type: "image",
@@ -110,7 +140,7 @@ const story = [
     ],
   },
   {
-    page: 5,
+    page: 4,
     type: "chapter",
     title: "A day at the beach",
     chapter_number: "2",
@@ -139,12 +169,12 @@ const story = [
     ],
   },
   {
-    page: 6,
+    page: 5,
     type: "game",
-    name: "Whack-a-mole",
+    name: "Whack-a-bottle",
   },
   {
-    page: 7,
+    page: 6,
     type: "chapter",
     title: "A day at the beach",
     chapter_number: "2",
@@ -152,7 +182,11 @@ const story = [
     content: [
       {
         type: "paragraph",
-        text: "After being saved by the group of friends, the fish tells them: “Thank you so much for saving me.”. After a moment of surprise, the kids sit down next to the water and <character> answers: “You’re welcome mr. fish, but why are you trying to eat the plastic if it’s not good for you?”. The fish swims around a bit before saying: “Oh, you can call me <companion>, now that you saved me, you are my friends.” Then, after taking a short pause, he answers them: “You know, to me in the water, it’s not always easy to make the difference between food and those small pieces of plastic. I have seen many of my family and friends eat those little pieces and get really sick.”",
+        text: "After being saved by the group of friends, the fish tells them: “Thank you so much for saving me.”. After a moment of surprise, the kids sit down next to the water and <character> answers: “You’re welcome mr. fish, but why are you trying to eat the plastic if it’s not good for you?”.",
+      },
+      {
+        type: "paragraph",
+        text: "The fish swims around a bit before saying: “Oh, you can call me <companion>, now that you saved me, you are my friends.” Then, after taking a short pause, he answers them: “You know, to me in the water, it’s not always easy to make the difference between food and those small pieces of plastic. I have seen many of my family and friends eat those little pieces and get really sick.”",
       },
       {
         type: "image",
@@ -165,15 +199,118 @@ const story = [
     ],
   },
   {
+    page: 7,
+    type: "lesson",
+    content: [
+      {
+        type: "image",
+        image: trashpark,
+      },
+      {
+        type: "text",
+        text: "Let's have a look on all the trash the kids found in the park. A lot of it looks like plastic. What is plastic though? Plastic is a kind of material that is made by people and can be formed into almost any shape. Most plastics are strong, long-lasting, and lightweight. They resist damage by water, heat, chemicals, and electricity. In addition, plastics can be made in many colors. To get more information about it and how it is made: Check out the video.",
+      },
+      {
+        type: "video",
+        link: "https://www.youtube.com/embed/6PgjA3HISmw",
+      },
+    ],
+  },
+  {
     page: 8,
-    type: "text",
+    type: "quiz",
+    content: [
+      {
+        id: 1,
+        img: plastic,
+        question: "What is plastic made of?",
+        answerOptions: [
+          { answer: "Plants", id: 1, isCorrect: false },
+          { answer: "Crushed up rock and glue", id: 2, isCorrect: false },
+          { answer: "Oil, coal, gas, and chemicals", id: 3, isCorrect: true },
+          { answer: "Water", id: 4, isCorrect: false },
+        ],
+        explanation:
+          "Plastic is a kind of material that is made by people and can be formed into almost any shape. Most plastics are made from chemicals that come from petroleum (oil), natural gas, or coal. Heating these chemicals causes them to break down into molecules. Molecules are groups of two or more atoms, which are the tiny building blocks of everything. Scientists then join these molecules into chains. These chains make up plastics.",
+      },
+      {
+        id: 2,
+        img: singleuse,
+        question: "What is single-use plastic?",
+        answerOptions: [
+          {
+            answer: "Objects that are made to be used by just one person",
+            id: 1,
+            isCorrect: false,
+          },
+          {
+            answer: "Objects that are made to be used once and thrown away",
+            id: 2,
+            isCorrect: true,
+          },
+          {
+            answer: "Objects that can be used again and again",
+            id: 3,
+            isCorrect: false,
+          },
+
+          {
+            answer: "Objects that are used by animals",
+            id: 4,
+            isCorrect: false,
+          },
+        ],
+        explanation:
+          "Single-use plastics are any kind of plastic tool that we use one time and then throw away. Things like plastic straws, forks, knives, spoons, water/soda bottles and plastic grocery bags are all examples of single-use plastics.",
+      },
+      {
+        id: 3,
+        img: brush,
+        question: "Which is NOT a single-use plastic item ?",
+        answerOptions: [
+          { answer: "Shampoo bottle", id: 1, isCorrect: false },
+          { answer: "Straw", id: 2, isCorrect: false },
+          { answer: "Lego", id: 3, isCorrect: true },
+          { answer: "A potato chip bag", id: 4, isCorrect: false },
+        ],
+        explanation:
+          "Even though Lego items are made out of plastic, it can be played with many times.",
+      },
+      {
+        id: 4,
+        img: balls,
+        question: "What is not made out of plastic?",
+        answerOptions: [
+          { answer: "Chewing gum", id: 1, isCorrect: false },
+          { answer: "wooden cooking spoon", id: 2, isCorrect: true },
+          { answer: "Shampoo", id: 3, isCorrect: false },
+          { answer: "wet wipes", id: 4, isCorrect: false },
+        ],
+        explanation:
+          "The wooden cooking spoon is usually made of natural wood and does not contain plastic. Chewing gums are mostly made of petroleum-based plastic polymers, and wet wipes and shampoo also often contain polyester or polypropylene.",
+      },
+      {
+        id: 5,
+        img: bottlebeach,
+        question:
+          "What happens to a plastic bottle if you bury it in the ground?",
+        answerOptions: [
+          { answer: "It turns into rock.", id: 1, isCorrect: false },
+          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
+          { answer: "It comes up again.", id: 3, isCorrect: false },
+          {
+            answer: "It breaks up into tiny pieces but does not disappear.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+      },
+    ],
   },
   {
     page: 9,
-    type: "quiz",
-  },
-  {
-    page: 10,
     type: "chapter",
     title: "A day at the beach",
     chapter_number: "2",
@@ -190,7 +327,7 @@ const story = [
     ],
   },
   {
-    page: 11,
+    page: 10,
     type: "chapter",
     title: "Back to school",
     chapter_number: "3",
@@ -211,15 +348,168 @@ const story = [
     ],
   },
   {
+    page: 11,
+    type: "lesson",
+    content: [
+      {
+        type: "image",
+        image: microplasticbag,
+      },
+      {
+        type: "text",
+        text: "Now you will find out how harmful plastic can be and what you could do in order to prevent a lot of trash",
+      },
+      {
+        type: "video",
+        link: "https://www.youtube.com/embed/gTr_rxnMP-o",
+      },
+    ],
+  },
+  {
     page: 12,
-    type: "text",
+    type: "quiz",
+    content: [
+      {
+        id: 10,
+        img: ocean,
+        question: "Why Is The Ocean Important?",
+        answerOptions: [
+          { answer: "Because it looks good.", id: 1, isCorrect: false },
+          {
+            answer: "Because it produces fresh water.",
+            id: 2,
+            isCorrect: false,
+          },
+          { answer: "Because you can swim in it.", id: 3, isCorrect: false },
+          {
+            answer: "Because it provides us with food,plants and oxygen.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Oceans are a great source of food for people around the world. They also provide minerals, oil, and natural gas. Phytoplankton and algae create much of the world’s oxygen. Oceans also help to keep climates stable by storing heat from the Sun.",
+      },
+      {
+        id: 11,
+        img: plasticocean,
+        question: "What happens to plastic trash when it gets into the ocean?",
+        answerOptions: [
+          {
+            answer: "Sinks to the bottom and gets buried under the sand.",
+            id: 1,
+            isCorrect: false,
+          },
+          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
+          {
+            answer: "Dissolves and decomposes in the water.",
+            id: 3,
+            isCorrect: false,
+          },
+          {
+            answer: "Breaks up into smaller and smaller pieces.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+      },
+      {
+        id: 12,
+        img: microplastic,
+        question: "What is Microplastic?",
+        answerOptions: [
+          {
+            answer:
+              "Soft plastic created when you melt hard plastic in the microwave",
+            id: 1,
+            isCorrect: false,
+          },
+          {
+            answer:
+              "Plastic particles so small that they can only be seen under a microscope",
+            id: 2,
+            isCorrect: false,
+          },
+          {
+            answer: "Plastic, that is only seeable in the water",
+            id: 3,
+            isCorrect: false,
+          },
+          {
+            answer:
+              "Plastic particles, which have the size between one and five millimeters.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Microplastics consist of tiny plastic particles that are hard to see with the eyes. They are formed when larger plastic parts decompose, but are also contained in cosmetics and care products. In shower gel, sunscreen and other products, they improve the cleansing effect or make them particularly creamy.",
+      },
+      {
+        id: 13,
+        img: turtle,
+        question: "Why do turtles and other ocean animals eat plastic bags?",
+        answerOptions: [
+          { answer: "Because they taste nice.", id: 1, isCorrect: false },
+          {
+            answer: "Because it's easier than hunting.",
+            id: 2,
+            isCorrect: false,
+          },
+          {
+            answer: "Because they can’t see very well underwater.",
+            id: 3,
+            isCorrect: false,
+          },
+          {
+            answer: "They mistake it for real food.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Animals eat plastic because it looks similar to their usual prey. As algae grows on plastic, the smell attracts animals that feed on it. Plastic can make animals sick and can get stuck in their stomachs.",
+      },
+      {
+        id: 14,
+        img: micro,
+        question: "What happens if animals eat micro platic?",
+        answerOptions: [
+          { answer: "They get even more hungry.", id: 1, isCorrect: false },
+          { answer: "They can swim faster.", id: 2, isCorrect: false },
+          { answer: "They dive with it.", id: 3, isCorrect: false },
+          {
+            answer: "It makes their stomage sick.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "PWhen turtles eat plastic, it can block their intestinal system (their guts). Therefore, they can no longer eat properly, which can kill them.",
+      },
+      {
+        id: 15,
+        img: bottlebeach,
+        question: "How does plastic get into the ocean?",
+        answerOptions: [
+          { answer: "It turns into rock.", id: 1, isCorrect: false },
+          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
+          { answer: "It comes up again.", id: 3, isCorrect: false },
+          {
+            answer: "It breaks up into tiny pieces but does not disappear.",
+            id: 4,
+            isCorrect: true,
+          },
+        ],
+        explanation:
+          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+      },
+    ],
   },
   {
     page: 13,
-    type: "quiz",
-  },
-  {
-    page: 14,
     type: "chapter",
     title: "Back to school",
     chapter_number: "3",
@@ -240,11 +530,7 @@ const story = [
     ],
   },
   {
-    page: 15,
-    type: "text",
-  },
-  {
-    page: 16,
+    page: 14,
     type: "chapter",
     title: "Making Grandma happy",
     chapter_number: "4",
@@ -273,12 +559,12 @@ const story = [
     ],
   },
   {
-    page: 17,
+    page: 15,
     type: "game",
     name: "ParkGame",
   },
   {
-    page: 18,
+    page: 16,
     type: "chapter",
     title: "Making Grandma happy",
     chapter_number: "4",
@@ -327,6 +613,63 @@ const story = [
       {
         type: "paragraph",
         text: "The End",
+      },
+    ],
+  },
+  {
+    page: 17,
+    type: "choice",
+    content: [
+      {
+        id: 1,
+        options: [
+          { id: 1, answer: plasticbottle, isCorrect: false },
+          { id: 2, answer: refillablebottle, isCorrect: true },
+        ],
+        explanation:
+          "Instead of using a plastic bottle, you can easily reuse the other one and refill water with it all the time. You can even add your favorite flavor to it.",
+        img: refill,
+      },
+      {
+        id: 2,
+        options: [
+          { id: 1, answer: yoghurtglass, isCorrect: true },
+          { id: 2, answer: yoghurt, isCorrect: false },
+        ],
+        explanation:
+          "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",
+        img: homemadeyoghurt,
+      },
+      {
+        id: 3,
+        options: [
+          { id: 1, answer: juiceglass, isCorrect: true },
+          { id: 2, answer: juicepack, isCorrect: false },
+        ],
+        explanation:
+          "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",
+        img: pressedjuice,
+      },
+      {
+        id: 4,
+        options: [
+          { id: 1, answer: plasticstraw, isCorrect: false },
+          { id: 2, answer: glasstraw, isCorrect: true },
+        ],
+        explanation:
+          "Instead of a plasticstraw, you can use glasstraws, paperstraws or even other things. Pro tip: Use macaronis as straw",
+        img: pastastraw,
+      },
+
+      {
+        id: 5,
+        options: [
+          { id: 1, answer: applewrapped, isCorrect: false },
+          { id: 2, answer: apple, isCorrect: true },
+        ],
+        explanation:
+          "Fruits don't need an extra wrapping around. Just take them without or put them in a tupperware",
+        img: applebox,
       },
     ],
   },

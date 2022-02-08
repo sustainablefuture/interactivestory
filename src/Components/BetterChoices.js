@@ -1,13 +1,8 @@
-import React, { useContext, useState } from "react";
-import { StoryContext } from "../Helpers/Context";
-// import "./styles/Quiz.css";
-import { choices } from "../Data/BetterChoices.js";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-export default function BetterChoices() {
-  const { storyState, setStoryState } = useContext(StoryContext);
-
+export default function BetterChoices({ choices, setCurrentPage }) {
   const [currentChoice, setCurrentChoice] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
@@ -29,8 +24,6 @@ export default function BetterChoices() {
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
       }, 2000);
-    } else {
-      setStoryState("game");
     }
   };
 
@@ -88,6 +81,9 @@ export default function BetterChoices() {
           </h3>
         </div>
       </div>
+      <button className="progress-button" onClick={() => setCurrentPage(0)}>
+        Restart the adventure
+      </button>
     </>
   );
 }
