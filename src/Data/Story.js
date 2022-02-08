@@ -243,11 +243,7 @@ const story = [
             id: 1,
             isCorrect: false,
           },
-          {
-            answer: "Objects that are made to be used once and thrown away",
-            id: 2,
-            isCorrect: true,
-          },
+
           {
             answer: "Objects that can be used again and again",
             id: 3,
@@ -258,6 +254,11 @@ const story = [
             answer: "Objects that are used by animals",
             id: 4,
             isCorrect: false,
+          },
+          {
+            answer: "Objects that are made to be used once and thrown away",
+            id: 2,
+            isCorrect: true,
           },
         ],
         explanation:
@@ -282,9 +283,9 @@ const story = [
         question: "What is not made out of plastic?",
         answerOptions: [
           { answer: "Chewing gum", id: 1, isCorrect: false },
-          { answer: "wooden cooking spoon", id: 2, isCorrect: true },
+          { answer: "Wooden cooking spoon", id: 2, isCorrect: true },
           { answer: "Shampoo", id: 3, isCorrect: false },
-          { answer: "wet wipes", id: 4, isCorrect: false },
+          { answer: "Wet wipes", id: 4, isCorrect: false },
         ],
         explanation:
           "The wooden cooking spoon is usually made of natural wood and does not contain plastic. Chewing gums are mostly made of petroleum-based plastic polymers, and wet wipes and shampoo also often contain polyester or polypropylene.",
@@ -295,14 +296,14 @@ const story = [
         question:
           "What happens to a plastic bottle if you bury it in the ground?",
         answerOptions: [
-          { answer: "It turns into rock.", id: 1, isCorrect: false },
-          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
-          { answer: "It comes up again.", id: 3, isCorrect: false },
+          { answer: "It turns into rock", id: 1, isCorrect: false },
           {
-            answer: "It breaks up into tiny pieces but does not disappear.",
+            answer: "It breaks up into tiny pieces but does not disappear",
             id: 4,
             isCorrect: true,
           },
+          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
+          { answer: "It comes up again", id: 3, isCorrect: false },
         ],
         explanation:
           "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
@@ -374,18 +375,18 @@ const story = [
         img: ocean,
         question: "Why Is The Ocean Important?",
         answerOptions: [
-          { answer: "Because it looks good.", id: 1, isCorrect: false },
           {
-            answer: "Because it produces fresh water.",
-            id: 2,
-            isCorrect: false,
-          },
-          { answer: "Because you can swim in it.", id: 3, isCorrect: false },
-          {
-            answer: "Because it provides us with food,plants and oxygen.",
+            answer: "Because it provides us with food,plants and oxygen",
             id: 4,
             isCorrect: true,
           },
+          { answer: "Because it looks good", id: 1, isCorrect: false },
+          {
+            answer: "Because it produces fresh water",
+            id: 2,
+            isCorrect: false,
+          },
+          { answer: "Because you can swim in it", id: 3, isCorrect: false },
         ],
         explanation:
           "Oceans are a great source of food for people around the world. They also provide minerals, oil, and natural gas. Phytoplankton and algae create much of the world’s oxygen. Oceans also help to keep climates stable by storing heat from the Sun.",
@@ -396,18 +397,18 @@ const story = [
         question: "What happens to plastic trash when it gets into the ocean?",
         answerOptions: [
           {
-            answer: "Sinks to the bottom and gets buried under the sand.",
+            answer: "Sinks to the bottom and gets buried under the sand",
             id: 1,
             isCorrect: false,
           },
-          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
+          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
           {
-            answer: "Dissolves and decomposes in the water.",
+            answer: "Dissolves and decomposes in the water",
             id: 3,
             isCorrect: false,
           },
           {
-            answer: "Breaks up into smaller and smaller pieces.",
+            answer: "Breaks up into smaller and smaller pieces",
             id: 4,
             isCorrect: true,
           },
@@ -433,15 +434,15 @@ const story = [
             isCorrect: false,
           },
           {
+            answer:
+              "Plastic particles, which have the size between one and five millimeters",
+            id: 4,
+            isCorrect: true,
+          },
+          {
             answer: "Plastic, that is only seeable in the water",
             id: 3,
             isCorrect: false,
-          },
-          {
-            answer:
-              "Plastic particles, which have the size between one and five millimeters.",
-            id: 4,
-            isCorrect: true,
           },
         ],
         explanation:
@@ -452,21 +453,21 @@ const story = [
         img: turtle,
         question: "Why do turtles and other ocean animals eat plastic bags?",
         answerOptions: [
-          { answer: "Because they taste nice.", id: 1, isCorrect: false },
+          { answer: "Because they taste nice", id: 1, isCorrect: false },
           {
-            answer: "Because it's easier than hunting.",
+            answer: "They mistake it for real food",
+            id: 4,
+            isCorrect: true,
+          },
+          {
+            answer: "Because it's easier than hunting",
             id: 2,
             isCorrect: false,
           },
           {
-            answer: "Because they can’t see very well underwater.",
+            answer: "Because they can’t see very well underwater",
             id: 3,
             isCorrect: false,
-          },
-          {
-            answer: "They mistake it for real food.",
-            id: 4,
-            isCorrect: true,
           },
         ],
         explanation:
@@ -477,11 +478,11 @@ const story = [
         img: micro,
         question: "What happens if animals eat micro platic?",
         answerOptions: [
-          { answer: "They get even more hungry.", id: 1, isCorrect: false },
-          { answer: "They can swim faster.", id: 2, isCorrect: false },
-          { answer: "They dive with it.", id: 3, isCorrect: false },
+          { answer: "They get even more hungry", id: 1, isCorrect: false },
+          { answer: "They can swim faster", id: 2, isCorrect: false },
+          { answer: "They dive with it", id: 3, isCorrect: false },
           {
-            answer: "It makes their stomage sick.",
+            answer: "It makes their stomage sick",
             id: 4,
             isCorrect: true,
           },
@@ -494,11 +495,11 @@ const story = [
         img: bottlebeach,
         question: "How does plastic get into the ocean?",
         answerOptions: [
-          { answer: "It turns into rock.", id: 1, isCorrect: false },
-          { answer: "It breaks down and disappears.", id: 2, isCorrect: false },
-          { answer: "It comes up again.", id: 3, isCorrect: false },
+          { answer: "It turns into rock", id: 1, isCorrect: false },
+          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
+          { answer: "It comes up again", id: 3, isCorrect: false },
           {
-            answer: "It breaks up into tiny pieces but does not disappear.",
+            answer: "It breaks up into tiny pieces but does not disappear",
             id: 4,
             isCorrect: true,
           },
@@ -670,6 +671,28 @@ const story = [
         explanation:
           "Fruits don't need an extra wrapping around. Just take them without or put them in a tupperware",
         img: applebox,
+      },
+    ],
+  },
+  {
+    page: 18,
+    type: "lesson",
+    content: [
+      {
+        id: 7,
+        type: "text",
+        text: "Look what the kids from in School in Hamburg made. Maybe you can also find something nice to do in order to protect the planet and save plastic. Ask your teacher, if you can also do a trash collection or even join the Plastic Pirates",
+      },
+      {
+        id: 8,
+        type: "image",
+        image:
+          "https://bmbf-plastik.de/sites/default/files/2018-02/csm_Plastikpiraten1_4ef8a00d34.jpg",
+      },
+      {
+        id: 9,
+        type: "video",
+        link: "https://www.youtube.com/embed/ry1rFCMqm4M",
       },
     ],
   },

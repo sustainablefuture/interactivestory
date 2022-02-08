@@ -2,15 +2,21 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-export default function BetterChoices({ choices, setCurrentPage }) {
+export default function BetterChoices({
+  choices,
+  setCurrentPage,
+  currentPage,
+}) {
   const [currentChoice, setCurrentChoice] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [showAnswerExpl, setShowAnswerExpl] = useState(false);
+  const [taskDone, setTaskDone] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleChoiceOptionClick = (options) => {
     const { isCorrect } = options;
-
+    setIsClicked(true);
     setSelectedAnswer(options);
     setShowAnswerExpl(true);
     if (isCorrect) {
@@ -24,6 +30,8 @@ export default function BetterChoices({ choices, setCurrentPage }) {
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
       }, 2000);
+    } else {
+      setTaskDone(true);
     }
   };
 
@@ -56,7 +64,7 @@ export default function BetterChoices({ choices, setCurrentPage }) {
               key={option.id}
               width="200px"
               height="150px"
-              disabled={selectedAnswer}
+              disabled={isClicked}
               className={getAnswerClass(option)}
               onClick={() => handleChoiceOptionClick(option)}
               src={option.answer}
@@ -68,12 +76,14 @@ export default function BetterChoices({ choices, setCurrentPage }) {
       <div className="right-page">
         <div className="score-section">
           <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
-          <h3>
-            You scored {score} out of {choices.length}
-          </h3>
+          <h2 className="score">
+            You scored <strong>{score}</strong> out of{" "}
+            <strong>{choices.length}</strong> Points{" "}
+          </h2>
         </div>
         {showAnswerExpl ? (
           <>
+            <h3>Explanation:</h3>
             <p>{choices[currentChoice].explanation}</p>
             <img src={choices[currentChoice].img} alt="" />
           </>
@@ -81,9 +91,16 @@ export default function BetterChoices({ choices, setCurrentPage }) {
           <></>
         )}
       </div>
-      <button className="progress-button" onClick={() => setCurrentPage(0)}>
-        Restart the adventure
-      </button>
+      {taskDone ? (
+        <button
+          className="progress-button"
+          onClick={() => setCurrentPage(currentPage + 1)}
+        >
+          next page
+        </button>
+      ) : (
+        ""
+      )}
     </>
   );
 }
