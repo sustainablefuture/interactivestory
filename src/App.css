@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "playtime";
+  src: local("playtime"), url("../src/Fonts/playtime.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  font-family: "playtime";
 }
 
 .App {

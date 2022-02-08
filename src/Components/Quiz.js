@@ -82,13 +82,13 @@ export default function Quiz() {
         </div>
       </div>
       <div className="right-page">
-        {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
         <div className="score-section">
           <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
           <h3>
             You scored {score} out of {questions.length}
           </h3>
         </div>
+        {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
       </div>
     </>
   );

@@ -24,13 +24,19 @@ const knowledgedata = [
     type: "video",
     link: "https://www.youtube.com/embed/gTr_rxnMP-o",
   },
-  //   { id: 7, type: "image", image: microplasticbag },
-  //   {
-  //     id: 8,
-  //     type: "text",
-  //     text: "",
-  //   },
-  //   { id: 9, type: "video", link: "" },
+
+  {
+    id: 7,
+    type: "text",
+    text: "Look what the kids from in School in Hamburg made. Maybe you can also find something nice to do in order to protect the planet and save plastic. Ask your teacher, if you can also do a trash collection or even join the Plastic Pirates",
+  },
+  {
+    id: 8,
+    type: "image",
+    image:
+      "https://bmbf-plastik.de/sites/default/files/2018-02/csm_Plastikpiraten1_4ef8a00d34.jpg",
+  },
+  { id: 9, type: "video", link: "https://www.youtube.com/embed/ry1rFCMqm4M" },
 ];
 
 export { knowledgedata };

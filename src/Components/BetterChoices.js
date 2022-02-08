@@ -73,6 +73,12 @@ export default function BetterChoices() {
         </div>
       </div>
       <div className="right-page">
+        <div className="score-section">
+          <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
+          <h3>
+            You scored {score} out of {choices.length}
+          </h3>
+        </div>
         {showAnswerExpl ? (
           <>
             <p>{choices[currentChoice].explanation}</p>
@@ -81,12 +87,6 @@ export default function BetterChoices() {
         ) : (
           <></>
         )}
-        <div className="score-section">
-          <FontAwesomeIcon icon={faTrophy} size="lg" flip="horizontal" />
-          <h3>
-            You scored {score} out of {choices.length}
-          </h3>
-        </div>
       </div>
     </>
   );

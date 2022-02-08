@@ -25,11 +25,13 @@
 }
 
 .answbtn {
-  border: 2px solid white;
+  border: 2px solid #74c5d9c4;
+  background-color: #74c5d942;
   margin: 3px;
   border-radius: 20px;
-  padding: 2px;
+  padding: 4px;
   margin: 2px;
+  font-size: 16px;
 }
 
 .answbtn:hover {
