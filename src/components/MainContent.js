@@ -2,7 +2,7 @@ import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import Book from "../Images/book.png";
 import { StoryContext } from "../Helpers/Context";
-import Start from "./Start";
+// import Start from "./Start";
 import Intro from "./Intro";
 import CharacterSelection from "./CharacterSelection.js";
 import Chapter from "./Chapter";
@@ -29,9 +29,9 @@ export default function MainContent({ selectChar, selectedChar, story }) {
   return (
     <div style={bookBackgroundStyles} className="main-content">
       <StoryContext.Provider value={{ storyState, score, setScore }}>
-        {storyState === "start" && (
+        {/* {storyState === "start" && (
           <Start currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        )}
+        )} */}
         {storyState === "intro" && <Intro />}
         {storyState === "select" && (
           <CharacterSelection
