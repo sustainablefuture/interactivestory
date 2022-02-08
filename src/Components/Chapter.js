@@ -4,7 +4,7 @@ import { TIMMY_TEXT, LEA_TEXT, COMPANION_NAME } from "../Data/constants";
 import "./styles/Chapter.css";
 
 // determines the number of items shown per slide
-const PAGE_SIZE = 6;
+const PAGE_SIZE = 4;
 
 export default function Chapter({
   chapter,
@@ -84,7 +84,9 @@ export default function Chapter({
           }
         })}
       </div>
-      <button onClick={onPageChange}>next page</button>
+      <button className="progress-button" onClick={onPageChange}>
+        next page
+      </button>
     </>
   );
 }

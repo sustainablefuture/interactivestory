@@ -1,13 +1,10 @@
-import { useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import Book from "../Images/book.png";
-import { StoryContext } from "../Helpers/Context";
-// import Start from "./Start";
 import Intro from "./Intro";
 import CharacterSelection from "./CharacterSelection.js";
 import Chapter from "./Chapter";
 import Game from "./Game";
-import Text from "./Text";
+import Lesson from "./Lesson";
 import Quiz from "./Quiz";
 import BetterChoices from "./BetterChoices";
 
@@ -18,9 +15,11 @@ const bookBackgroundStyles = {
 };
 
 export default function MainContent({ selectChar, selectedChar, story }) {
-  const [score, setScore] = useLocalStorage("score", 0);
+  // score to be implemented
+  // const [score, setScore] = useLocalStorage("score", 0);
   const [currentPage, setCurrentPage] = useLocalStorage("page", 0);
 
+  // protection during development
   if (currentPage > story.length - 1 || currentPage < 0) {
     setCurrentPage(0);
   }
@@ -29,30 +28,53 @@ export default function MainContent({ selectChar, selectedChar, story }) {
 
   return (
     <div style={bookBackgroundStyles} className="main-content">
-      <StoryContext.Provider value={{ storyState, score, setScore }}>
-        {/* {storyState === "start" && (
-          <Start currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        )} */}
-        {storyState === "intro" && <Intro />}
-        {storyState === "select" && (
-          <CharacterSelection
-            selectedChar={selectedChar}
-            selectChar={selectChar}
-          />
-        )}
-        {storyState === "chapter" && (
-          <Chapter
-            chapter={story[currentPage]}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-            selectedChar={selectedChar}
-          />
-        )}
-        {storyState === "text" && <Text />}
-        {storyState === "quiz" && <Quiz />}
-        {storyState === "choice" && <BetterChoices />}
-        {storyState === "game" && <Game name={story[currentPage].name} />}
-      </StoryContext.Provider>{" "}
+      {storyState === "intro" && (
+        <Intro currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      )}
+      {storyState === "select" && (
+        <CharacterSelection
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          selectedChar={selectedChar}
+          selectChar={selectChar}
+        />
+      )}
+      {storyState === "chapter" && (
+        <Chapter
+          chapter={story[currentPage]}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          selectedChar={selectedChar}
+        />
+      )}
+      {storyState === "lesson" && (
+        <Lesson
+          lesson={story[currentPage]}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )}
+      {storyState === "quiz" && (
+        <Quiz
+          quiz={story[currentPage]}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )}
+      {storyState === "choice" && (
+        <BetterChoices
+          choices={story[currentPage].content}
+          setCurrentPage={setCurrentPage}
+        />
+      )}
+      {storyState === "game" && (
+        <Game
+          name={story[currentPage].name}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+      )}
+      {/* dev buttons for demo + development */}
       <button
         onClick={() => setCurrentPage(currentPage - 1)}
         className="prev-button"
@@ -70,4 +92,3 @@ export default function MainContent({ selectChar, selectedChar, story }) {
 }
 
 // Checked
-// Should storystate button change be related to chapterpage change button?

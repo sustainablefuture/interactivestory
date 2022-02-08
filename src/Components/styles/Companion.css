@@ -7,7 +7,7 @@
   position: absolute;
 }
 
-.companion {
+.companion:hover {
   animation: swim .8s steps(4) infinite;
   position: absolute;
 }

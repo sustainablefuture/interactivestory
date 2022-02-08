@@ -1,17 +1,14 @@
-import React, { useContext, useState } from "react";
-import { StoryContext } from "../Helpers/Context";
+import { useState } from "react";
 import "./styles/Quiz.css";
-import { questions } from "../Data/MCQuestions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-export default function Quiz() {
-  const { storyState, setStoryState } = useContext(StoryContext);
-
+export default function Quiz({ currentPage, setCurrentPage, quiz }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [score, setScore] = useState(0);
   const [showAnswerExpl, setShowAnswerExpl] = useState(false);
+  const questions = quiz.content;
 
   const handleAnswerOptionClick = (answerOption) => {
     const { isCorrect } = answerOption;
@@ -29,8 +26,6 @@ export default function Quiz() {
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
       }, 5000);
-    } else {
-      setStoryState("start");
     }
   };
 
@@ -90,6 +85,12 @@ export default function Quiz() {
         </div>
         {showAnswerExpl ? <p>{questions[currentQuestion].explanation}</p> : ""}
       </div>
+      <button
+        className="progress-button"
+        onClick={() => setCurrentPage(currentPage + 1)}
+      >
+        next page
+      </button>
     </>
   );
 }

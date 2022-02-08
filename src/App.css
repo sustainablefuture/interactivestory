@@ -11,6 +11,7 @@
 }
 
 .App {
+  overflow: hidden ;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -26,8 +27,13 @@ h2 {
   font-size: 1.5rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 img {
   max-width: 100%;
+  max-height: 400px;
 }
 
 .left-container {
@@ -53,6 +59,7 @@ img {
 
 .left-page {
   display: flex;
+  gap: 50px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -71,26 +78,52 @@ img {
   padding: 20px;
 }
 
+.progress-button {
+  position: absolute;
+  bottom: 13%;
+  right: 5%;
+  border: none;
+  background: none;
+	color: #404040 !important;
+	
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+}
+
+.progress-button:hover {
+	color: #ffffff !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: #404040;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
+
 .next-button {
+  color: transparent;
+  border: none;
   position: absolute;
   bottom: 0;
   right: 0;
-  border: solid red 1px;
-  background-color: red;
+  background-color: transparent;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
 }
 
 .prev-button {
+  color: transparent;
+  border: none;
   position: absolute;
   bottom: 0;
   left: 0;
-  border: solid red 1px;
-  background-color: red;
+  background-color: transparent;
   height: 50px;
   width: 50px;
-  border-radius: 50%;
 }
 
 .bottom-left {
@@ -100,13 +133,8 @@ img {
   height: 17%;
 }
 
-.dev-button {
-  width: 50px;
-  height: 50px;
-  margin-left: 10px;
-}
-
 .right-container {
+  position: relative;
   width: 20%;
   height: 100%;
   display: flex;
@@ -117,27 +145,35 @@ img {
 
 .companion-frame {
   position: fixed;
-  top: 0;
-  right: 0;
+  bottom: 35%;
+  right: 2.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  width: 500px;
-  height: 300px;
+  width: 550px;
   margin-top: 1em;
 }
 
 .character-portrait {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 5%;
+  right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin-bottom: 1em;
+  padding: 20px;
+}
+
+.portrait-img {
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 73%;
+  height: 72%;
 }
 
 .game-screen {
@@ -147,8 +183,30 @@ img {
   height: 100%;
 }
 
+.game-frame {
+  width: 100%;
+  height: 100%;
+}
+
 .startbutton {
   border: 1px solid black;
   border-radius: 5px;
   padding: 5px;
+}
+
+.apple{
+  position: absolute;
+  top: -10px;
+  right: -70px;
+  max-width: 18%;
+  transform: rotate(-45deg);
+  
+}
+
+.pencil{
+  position: absolute;
+  width: 25%;
+  bottom: -100px;
+  left: 20%;
+
 }

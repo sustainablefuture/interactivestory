@@ -3,7 +3,12 @@ import { characters } from "../Data/Characters";
 import CharacterChoice from "./CharacterChoice";
 import { Card, ListGroup } from "react-bootstrap";
 
-export default function CharacterSelection({ selectChar, selectedChar }) {
+export default function CharacterSelection({
+  selectChar,
+  selectedChar,
+  currentPage,
+  setCurrentPage,
+}) {
   const clickCharacter = (id) => {
     selectChar(id);
   };
@@ -53,10 +58,12 @@ export default function CharacterSelection({ selectChar, selectedChar }) {
           {<CharacterChoice selectedChar={selectedChar} />}
         </div>
       </div>
+      <button
+        className="progress-button"
+        onClick={() => setCurrentPage(currentPage + 1)}
+      >
+        next page
+      </button>
     </>
   );
 }
-
-// checked
-// need to add a left-right page division
-// need to add characters characteristics and preferences

@@ -1,5 +1,6 @@
 What to talk about during presentation?
 
+- Single page application
 - Character choice
 - Interactive companion
 - Dynamic text from the view of the character
@@ -14,6 +15,8 @@ What to talk about during presentation?
 
 What we will implement next (lack of time, haha!)
 
+- Integrate with React pageflip
+- Full companion integration
 - Fully responsive at different media-query sizes
 - React Native port
 - CMS Integration for the content management
