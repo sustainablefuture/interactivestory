@@ -64,7 +64,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”. <he/she> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home.”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
+        text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”. <he/she> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home. Some people have even thrown their empty water bottles there”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
       },
       {
         type: "image",
@@ -72,7 +72,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "She shakes her head and puts her soft hand on <character>’s shoulder, saying: “You’re right that the park isn’t so nice to play in today. It seems to get worse every week we come here. You know what, why don’t you tell your friends to come here and I will tell you all a story.”",
+        text: "She shakes her head and puts her soft hand on <character>’s shoulder, saying: “You’re right that the park isn’t so nice to play in today. I can see all the plastic trash as well. It seems to get worse every week we come here. You know what, why don’t you tell your friends to come here and I will tell you all a story.”",
       },
 
       {
@@ -89,7 +89,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After taking a small break to look around, she continues: “In my memories, there were a lot more trees and a lot more places to play hide and seek.” She then looks at the kids and realizes that she didn’t really succeed in cheering them up. They look a bit sad and she notices that is also how she feels. Not wanting to make it worse, she tells them to go and play a bit more before they have to head home.",
+        text: "After taking a small break to look around, she continues: “In my memories, there were a lot more trees and a lot more places to play hide and seek. And back then, they were also cleaner and without all the trash.” She then looks at the kids and realizes that she didn’t really succeed in cheering them up. They look a bit sad and she notices that is also how she feels. Not wanting to make it worse, she tells them to go and play a bit more before they have to head home.",
       },
       {
         type: "image",
