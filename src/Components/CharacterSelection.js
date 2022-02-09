@@ -43,7 +43,10 @@ export default function CharacterSelection({
                   </Card.Title>
                   <ListGroup variant="flush">
                     <ListGroup.Item>
-                      <ul className="selection-list">
+                      <ul
+                        style={{ border: `solid 4px ${character.color}` }}
+                        className="selection-list"
+                      >
                         {character.characteristics.map((characteristic) => (
                           <li>{characteristic}</li>
                         ))}
