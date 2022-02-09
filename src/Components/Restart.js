@@ -6,11 +6,13 @@ export default function Restart({
   setCurrentPage,
   setSelectedChar,
   setIsCompanionVisible,
+  setIsStarted,
 }) {
   const onRestart = () => {
     setCurrentPage(0);
     setSelectedChar(null);
     setIsCompanionVisible(false);
+    setIsStarted(false);
   };
 
   return (

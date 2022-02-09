@@ -44,6 +44,7 @@ import homemadeyoghurt from "../Images/homemadeyoghurt.png";
 import refill from "../Images/refill.png";
 import applebox from "../Images/applebox.png";
 import fishPlastic from "../Images/fish_plastic.png";
+import sorting from "../Images/sorting.png";
 
 const story = [
   {
@@ -576,7 +577,7 @@ const story = [
       {},
       {
         type: "image",
-        image: dirtypark,
+        image: sorting,
       },
     ],
   },

@@ -30,10 +30,6 @@ What we would need to push it to the next level
 - Tablet integration
 
 
-
-
-
-
 The adventures of Timmy, Lea and Bastian
 
 An interactive story adventure where children can choose a character and follow them in a learning experience about Recycling through story, activities, games and more!

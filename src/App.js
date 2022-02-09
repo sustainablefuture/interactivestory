@@ -42,6 +42,7 @@ function App() {
               setSelectedChar={setSelectedChar}
               story={story}
               setIsCompanionVisible={setIsCompanionVisible}
+              setIsStarted={setIsStarted}
             />
             <div className="bottom-left"></div>
           </div>

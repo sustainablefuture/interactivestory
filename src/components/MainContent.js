@@ -21,6 +21,7 @@ export default function MainContent({
   setSelectedChar,
   story,
   setIsCompanionVisible,
+  setIsStarted,
 }) {
   // score to be implemented
   // const [score, setScore] = useLocalStorage("score", 0);
@@ -88,6 +89,7 @@ export default function MainContent({
           setCurrentPage={setCurrentPage}
           setSelectedChar={setSelectedChar}
           setIsCompanionVisible={setIsCompanionVisible}
+          setIsStarted={setIsStarted}
         />
       )}
       {/* dev buttons for demo + development */}
