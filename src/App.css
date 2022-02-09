@@ -33,7 +33,7 @@ p {
 
 img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .left-container {
@@ -204,7 +204,7 @@ img {
 .pencil {
   position: absolute;
   width: 30%;
-  bottom: -4%;
+  bottom: -100px;
   left: 20%;
 }
 

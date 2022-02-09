@@ -11,3 +11,7 @@
     margin-bottom: 10px;
     align-self: flex-start;
 }
+
+.lesson-image {
+    max-height: 300px;
+}

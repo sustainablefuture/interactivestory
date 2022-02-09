@@ -8,7 +8,12 @@ export default function Text({ lesson, currentPage, setCurrentPage }) {
         {lesson.content.map((leftContent) => {
           if (leftContent.type === "image") {
             return (
-              <img src={leftContent.image} alt="" key={leftContent.id}></img>
+              <img
+                className="lesson-image"
+                src={leftContent.image}
+                alt=""
+                key={leftContent.id}
+              ></img>
             );
           }
           if (leftContent.type === "text") {
