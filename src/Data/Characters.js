@@ -11,7 +11,7 @@ const characters = [
   },
   {
     id: 2,
-    name: "Timi",
+    name: "Timmy",
     color: "orange",
     img: boy,
     characteristics: ["Football", "Skating", "Breakdance"],
