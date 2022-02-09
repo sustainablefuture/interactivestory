@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles/Quiz.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { v4 } from "uuid";
 
 export default function Quiz({ currentPage, setCurrentPage, quiz }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);

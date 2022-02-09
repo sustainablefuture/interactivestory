@@ -2,6 +2,7 @@ import "./styles/CharacterSelection.css";
 import { characters } from "../Data/Characters";
 import CharacterChoice from "./CharacterChoice";
 import { Card, ListGroup } from "react-bootstrap";
+import { v4 } from "uuid";
 
 export default function CharacterSelection({
   selectChar,
@@ -48,7 +49,7 @@ export default function CharacterSelection({
                         className="selection-list"
                       >
                         {character.characteristics.map((characteristic) => (
-                          <li>{characteristic}</li>
+                          <li key={v4()}>{characteristic}</li>
                         ))}
                       </ul>
                     </ListGroup.Item>
