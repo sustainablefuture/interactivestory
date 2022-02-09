@@ -88,6 +88,7 @@ export default function Chapter({
           if (rightData.type === "trigger") {
             return (
               <CompanionActivation
+                key={v4()}
                 setIsCompanionVisible={setIsCompanionVisible}
               />
             );
