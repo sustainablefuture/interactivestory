@@ -1,4 +1,9 @@
-What to talk about during presentation?
+Guillaume
+    -more lessons
+    -
+
+
+
 
 - Single page application
 - Character choice
