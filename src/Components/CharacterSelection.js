@@ -23,7 +23,7 @@ export default function CharacterSelection({
           <div className="charboxes">
             {characters.map((character) => (
               <Card border="primary" key={character.id}>
-                <Card.Header as="h5" style={{ background: character.color }}>
+                <Card.Header as="h3" style={{ background: character.color }}>
                   {character.name}
                 </Card.Header>
                 <Card.Img
