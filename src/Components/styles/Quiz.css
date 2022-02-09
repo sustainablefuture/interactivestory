@@ -49,6 +49,10 @@
 .choice-section {
   display: flex;
   flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .score-section {
@@ -73,4 +77,5 @@
 
 .quiz-done {
   display: flex;
+  margin-top: 50px;
 }

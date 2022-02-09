@@ -12,7 +12,7 @@ import kidsWater from "../Images/kidswater.png";
 import raisedHand from "../Images/raised_hand.jpg";
 import dirtyRiver from "../Images/dirty_river.jpg";
 import riverCleaning from "../Images/river_cleaning.jpg";
-import happyGrandma from "../Images/happy_grandma.jpg";
+import happyGrandma from "../Images/happy_grandma.png";
 import cleanPark from "../Images/kidsparkplace.png";
 import recycling from "../Images/recycling.png";
 import kidsWalking from "../Images/kids_walking.png";

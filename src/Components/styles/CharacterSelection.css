@@ -48,4 +48,5 @@
 
 .selection-list {
   list-style-type: none;
+  border: 1px solid;
 }

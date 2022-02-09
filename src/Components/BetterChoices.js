@@ -29,6 +29,7 @@ export default function BetterChoices({
         setCurrentChoice(nextChoice);
         setSelectedAnswer(null);
         setShowAnswerExpl(false);
+        setIsClicked(false);
       }, 2000);
     } else {
       setTaskDone(true);
@@ -63,10 +64,12 @@ export default function BetterChoices({
             <img
               key={option.id}
               width="200px"
-              height="150px"
+              height="230px"
               disabled={isClicked}
               className={getAnswerClass(option)}
-              onClick={() => handleChoiceOptionClick(option)}
+              onClick={() => {
+                if (!isClicked) handleChoiceOptionClick(option);
+              }}
               src={option.answer}
               alt={option.answer}
             />
@@ -90,6 +93,7 @@ export default function BetterChoices({
         ) : (
           <></>
         )}
+        {taskDone && <h1 className="quiz-done">Well Done!</h1>}
       </div>
       {taskDone ? (
         <button
