@@ -42,7 +42,7 @@ export default function CharacterSelection({
                     What I like:
                   </Card.Title>
                   <ListGroup variant="flush">
-                    <ListGroup.Item>
+                    <ListGroup.Item key={character.id}>
                       <ul
                         style={{ border: `solid 4px ${character.color}` }}
                         className="selection-list"
