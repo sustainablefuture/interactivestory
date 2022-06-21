@@ -1,7 +1,7 @@
 {
   "name": "interactivestory",
   "version": "0.1.0",
-  "homepage": "https://sustainablefuture.github.io/interactivestory",
+  "homepage": "https://jensprojects.github.io/storybook",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
