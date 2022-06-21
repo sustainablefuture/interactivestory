@@ -58,7 +58,7 @@ const story = [
   {
     page: 3,
     type: "chapter",
-    title: "An afternoon at the park",
+    title: "Ein Nachmittag im Park",
     chapter_number: "1",
     sub_chapter_number: "1",
     content: [
@@ -68,11 +68,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "It is a sunny and warm Friday afternoon and <character> is feeling very happy. It is the favorite time of the week for <him/her>, it is the time <he/she> gets to go play at the park. Like usual, grandma Ania is waiting in the school yard to accompany <him/her> and the friends coming along. At this time of the day, most parents are still working, but <character> is always happy to spend a good time with grandma and <his/her> friends.",
+        text: "Es ist ein sonniger und warmer Freitagnachmittag und <character> ist sehr glücklich. Es ist die Lieblingszeit der Woche für <ihn/sie>, es ist die Zeit, in der <er/sie> im Park spielen kann. Wie immer wartet Oma Ania auf dem Schulhof, um <ihn/sie> und die Freunde zu begleiten, die mitkommen. Zu dieser Tageszeit sind die meisten Eltern noch am Arbeiten, aber <Charakter> freut sich immer, eine gute Zeit mit Oma und <seiner/ihrer> Freunden zu verbringen.",
       },
       {
         type: "paragraph",
-        text: "On the way to the park, grandma Ania asks <character>: “Paul is not coming with us today?”. <character> looks at the older lady with a smile and says: “Oh no, he has to go to the dentist with his mom today.” The grandmother nods her approbation and they keep walking a couple more minutes until they reach the park.",
+        text: 'Auf dem Weg zum Park fragt Oma Ania <character>: "Paul kommt heute nicht mit?". <charakter> schaut die ältere Dame lächelnd an und sagt: "Oh nein, er muss heute mit seiner Mutter zum Zahnarzt." Die Großmutter nickt zustimmend und sie gehen noch ein paar Minuten weiter, bis sie den Park erreichen.',
       },
       {
         type: "image",
@@ -80,7 +80,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "When they arrive at the park, <character> and <his/her> friends start running toward the playground to play together. Grandma Ania watches them run past her with a caring smile on her face.",
+        text: "Als sie im Park ankommen, rennen <character> und <seine/ihre> Freunde zum Spielplatz, um gemeinsam zu spielen. Oma Ania sieht ihnen mit einem fürsorglichen Lächeln im Gesicht hinterher",
       },
       {
         type: "image",
@@ -88,11 +88,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After a few minutes of playing in the grass and around the trees, <character> comes back to Ania and she can see on <his/her> face that something is wrong. She asks first: “Hey, <character>, what seems to be the problem?”. Raising <his/her> face to her, <he/she> answers: “We were playing in the bushes there”.",
+        text: 'Nach ein paar Minuten des Spielens im Gras und um die Bäume herum, kommt <character> zurück zu Ania und sie kann auf <seinem/ihrem> Gesicht sehen, dass etwas nicht stimmt. Sie fragt zuerst: "Hey, <character>, wo liegt das Problem?". <er/sie> hebt <sein/ihr> Gesicht zu ihr und antwortet: "Wir haben dort im Gebüsch gespielt".',
       },
       {
         type: "paragraph",
-        text: "<He/She> turns around to point a bit further and continues: “It’s full of garbage and other stuff that we put in the garbage at home. Some people have even thrown their empty water bottles there”. The older lady looks up with a bit more attention at the playground and realizes that the park is more or less covered with litter.",
+        text: '<er/sie> dreht sich um, zeigt ein Stück weiter und fährt fort: "Er ist voll mit Müll und anderen Dingen, die wir zu Hause in den Müll werfen. Einige Leute haben sogar ihre leeren Wasserflaschen dorthin geworfen". Die ältere Dame schaut etwas aufmerksamer auf den Spielplatz und stellt fest, dass der Park mehr oder weniger mit Müll übersät ist.',
       },
       {
         type: "image",
@@ -100,16 +100,16 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "She shakes her head and puts her soft hand on <character>’s shoulder, saying: “You’re right that the park isn’t so nice to play in today. I can see all the plastic trash as well. It seems to get worse every week we come here. You know what, why don’t you tell your friends to come here and I will tell you all a story.”",
+        text: 'Sie schüttelt den Kopf, legt ihre weiche Hand auf <charakter>s Schulter und sagt: "Du hast recht, der Park ist heute nicht so schön zum Spielen. Ich kann auch den ganzen Plastikmüll sehen. Es scheint jede Woche, die wir hierher kommen, schlimmer zu werden. Weißt du was, warum sagst du deinen Freunden nicht, dass sie hierher kommen sollen, und ich erzähle euch eine Geschichte."',
       },
 
       {
         type: "paragraph",
-        text: "Agreeing with a smile, <character> goes to get <his/her> friends and they all sit in front of the grandmother. She takes a deep breath and starts: “You know kids, when I was your age, I was also living around here.”. Raising her hand in front of her, she points toward a house a bit further down the street and resumes: ",
+        text: 'Mit einem Lächeln stimmt <character> zu und holt <seine/ihre> Freunde, die sich alle vor die Großmutter setzen. Sie holt tief Luft und beginnt: "Wisst ihr Kinder, als ich in eurem Alter war, habe ich auch hier in der Gegend gewohnt.". Sie hebt die Hand vor sich und zeigt auf ein Haus ein Stück weiter die Straße hinunter und fährt fort: ',
       },
       {
         type: "paragraph",
-        text: "“This was the house of my parents. I used to come here to play, just like you. There was only a swing back then, but we loved to come here and play. I even remember some of the trees that are still here.”. The children look at Ania with dreamy eyes, captured by the idea of something so far in the past.",
+        text: '"Das war das Haus meiner Eltern. Ich kam immer hierher, um zu spielen, genau wie du. Damals gab es nur eine Schaukel, aber wir liebten es, hierher zu kommen und zu spielen. Ich erinnere mich sogar an einige der Bäume, die hier noch stehen.". Die Kinder schauen Ania mit verträumten Augen an, gebannt von der Vorstellung von etwas, das so weit in der Vergangenheit liegt.',
       },
       {
         type: "image",
@@ -121,7 +121,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After taking a small break to look around, she continues: “In my memories, there were a lot more trees and a lot more places to play hide and seek. And back then, they were also cleaner and without all the trash.” She then looks at the kids and realizes that she didn’t really succeed in cheering them up. They look a bit sad and she notices that is also how she feels. Not wanting to make it worse, she tells them to go and play a bit more before they have to head home.",
+        text: 'Sam, einer der Freunde von <character>, fragt sie: "Wow, ist es wahr, dass Bäume so lange leben können?". Die ältere Dame schaut sie an und antwortet mit einem freundlichen Lachen: "Oh, natürlich, sie sind viel älter als ich und sie werden noch viele Jahre leben. Das heißt, wenn wir uns um sie kümmern. So wie der Park heute ist, bin ich mir nicht sicher, ob die Leute wirklich erkennen, wie wichtig das ist."',
       },
       {
         type: "image",
@@ -129,7 +129,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "<character> and <his/her> friends go back to the playground and they start talking: “My grandma is really sad now, I wish we could do something to cheer her up.”. The friends shake their heads in agreement and Sam answers: “Yes, I also feel sad from that, but what can we do?”. William, another one of their friends, adds: “Maybe we can ask our parents if they have an idea.”",
+        text: '<character> und <seine/ihre> Freunde gehen zurück auf den Spielplatz und beginnen zu reden: "Meine Oma ist jetzt wirklich traurig, ich wünschte, wir könnten etwas tun, um sie aufzuheitern.". Die Freunde schütteln zustimmend den Kopf und Sam antwortet: "Ja, ich bin auch traurig darüber, aber was können wir tun?". William, ein anderer ihrer Freunde, fügt hinzu: "Vielleicht können wir unsere Eltern fragen, ob sie eine Idee haben."',
       },
       {
         type: "image",
@@ -137,20 +137,20 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After agreeing that this would be a smart idea, all the friends go back to Ania and start heading home. On the way, they feel a bit sad and don’t talk much. Ania reflects on a greener past while <character> hopes <he/she> will be able to find a solution to make <his/her> grandmother happy again.",
+        text: "Nachdem sie sich darauf geeinigt haben, dass dies eine kluge Idee ist, gehen alle Freunde zurück zu Ania und machen sich auf den Heimweg. Auf dem Weg dorthin sind sie ein wenig traurig und reden nicht viel. Ania denkt über eine grünere Vergangenheit nach, während <character> hofft, dass <er/sie> eine Lösung finden wird, um <seine/ihre> Großmutter wieder glücklich zu machen.",
       },
     ],
   },
   {
     page: 4,
     type: "chapter",
-    title: "A day at the beach",
+    title: "Ein Tag am Strand",
     chapter_number: "2",
     sub_chapter_number: "1",
     content: [
       {
         type: "paragraph",
-        text: "<character> gets up early in the morning. <He/She> is excited to go to the beach today. <He/She> first asks <his/her> parents about what they can do in the park, but they’re not too sure. They tell <him/her> that maybe a teacher or somebody knowing more could help them.",
+        text: "<character> steht früh am Morgen auf. <er/sie> freut sich darauf, heute an den Strand zu gehen. <er/sie> fragt zuerst <seine/ihre >Eltern, was <er/sie> im Park machen kann, aber sie sind sich nicht ganz sicher. Sie sagen <ihm/ihr>, dass vielleicht ein Lehrer oder jemand, der mehr weiß, ihnen helfen könnte.",
       },
       {
         type: "image",
@@ -158,7 +158,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "After driving for thirty minutes, they get to the beach and meet with Sam and William who are also there with their parents. They start playing on the beach and make a big castle out of sand.",
+        text: "Nach dreißig Minuten Fahrt kommen sie am Strand an und treffen dort auf Sam und William, die ebenfalls mit ihren Eltern dort sind. Sie fangen an, am Strand zu spielen und bauen eine große Burg aus Sand.",
       },
       {
         type: "image",
@@ -166,11 +166,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "Sam tells them : “Look! Something weird is floating in the water over there, next to the big rock.”. They all go and see that many water bottles are floating on the surface. There is also a little fish swimming through the trash and trying to eat the plastic pieces.",
+        text: 'Sam sagt zu ihnen: "Seht mal, da drüben, neben dem großen Felsen, schwimmt etwas Seltsames im Wasser.". Sie gehen alle hin und sehen, dass viele Wasserflaschen an der Oberfläche schwimmen. Außerdem schwimmt ein kleiner Fisch durch den Müll und versucht, die Plastikteile zu fressen.',
       },
       {
         type: "paragraph",
-        text: "William says : “<character>, we must not let it eat that! It’s not food and I think it’s dangerous to eat.”.",
+        text: 'William sagt: "<character>, wir dürfen es das nicht essen lassen! Es ist kein Essen und ich denke, es ist gefährlich zu essen."',
       },
       {
         type: "image",
@@ -181,22 +181,22 @@ const story = [
   {
     page: 5,
     type: "game",
-    name: "Whack-a-bottle",
+    name: "Fang die Flasche",
   },
   {
     page: 6,
     type: "chapter",
-    title: "A day at the beach",
+    title: "Ein Tag am Strand",
     chapter_number: "2",
     sub_chapter_number: "2",
     content: [
       {
         type: "paragraph",
-        text: "After being saved by the group of friends, the fish tells them: “Thank you so much for saving me.”. After a moment of surprise, the kids sit down next to the water and <character> answers: “You’re welcome mr. fish, but why are you trying to eat the plastic if it’s not good for you?”.",
+        text: 'Nachdem er von der Gruppe von Freunden gerettet wurde, sagt der Fisch zu ihnen: "Vielen Dank, dass ihr mich gerettet habt.". Nach einem Moment der Überraschung setzen sich die Kinder neben das Wasser und <character> antwortet: "Gern geschehen, Herr Fisch, aber warum versuchst du, das Plastik zu essen, wenn es nicht gut für dich ist?".',
       },
       {
         type: "paragraph",
-        text: "The fish swims around a bit before saying: “Oh, you can call me <companion>, now that you saved me, you are my friends.” Then, after taking a short pause, he answers them: “You know, to me in the water, it’s not always easy to make the difference between food and those small pieces of plastic. I have seen many of my family and friends eat those little pieces and get really sick.”",
+        text: 'Der Fisch schwimmt ein wenig herum und sagt dann: "Oh, ihr könnt mich <companion> nennen, jetzt, wo ihr mich gerettet habt, seid ihr meine Freunde." Dann, nach einer kurzen Pause, antwortet er ihnen: "Wisst ihr, für mich ist es im Wasser nicht immer einfach, den Unterschied zwischen Nahrung und diesen kleinen Plastikstücken zu erkennen. Ich habe gesehen, wie viele meiner Familie und Freunde diese kleinen Stücke gegessen haben und richtig krank wurden."',
       },
       {
         type: "image",
@@ -204,14 +204,14 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "The friends and <companion> keep talking for a while and play in the water like they knew each other for a long time. <companion> is a really smart animal and he tells the kids so much about the problems that plastic pollution is bringing to the sea and it’s creatures.",
+        text: "Die Freunde und <companion> unterhalten sich noch eine Weile und spielen im Wasser, als ob sie sich schon lange kennen würden. <companion> ist ein wirklich kluges Tier und er erzählt den Kindern viel über die Probleme, die die Plastikverschmutzung dem Meer und seinen Lebewesen bringt.",
       },
     ],
   },
   {
     page: 7,
     type: "lesson",
-    title: "What is plastic?",
+    title: "Was ist Plastik?",
     content: [
       {
         type: "image",
@@ -219,7 +219,7 @@ const story = [
       },
       {
         type: "text",
-        text: "Let's have a look on all the trash the kids found in the park. A lot of it looks like plastic. What is plastic though? Plastic is a kind of material that is made by people and can be formed into almost any shape. Most plastics are strong, long-lasting, and lightweight. They resist damage by water, heat, chemicals, and electricity. In addition, plastics can be made in many colors. To get more information about it and how it is made: Check out the video.",
+        text: "Schauen wir uns den Müll an, den die Kinder im Park gefunden haben. Vieles davon sieht aus wie Plastik. Aber was ist Plastik? Plastik ist eine Art Material, das von Menschen hergestellt wird und in fast jede Form gebracht werden kann. Mehr Informationen über Kunststoffe und ihre Herstellung findest du im Video.",
       },
       {
         type: "video",
@@ -234,97 +234,104 @@ const story = [
       {
         id: 1,
         img: plastic,
-        question: "What is plastic made of?",
+        question: "Aus was wird Plastik hergestellt?",
         answerOptions: [
-          { answer: "Plants", id: 1, isCorrect: false },
-          { answer: "Crushed up rock and glue", id: 2, isCorrect: false },
-          { answer: "Oil, coal, gas, and chemicals", id: 3, isCorrect: true },
-          { answer: "Water", id: 4, isCorrect: false },
+          { answer: "Pflanzen", id: 1, isCorrect: false },
+          { answer: "Zerkleinerter Stein und Leim", id: 2, isCorrect: false },
+          { answer: "Öl, Kohle, Gas und Chemikalien", id: 3, isCorrect: true },
+          { answer: "Wasser", id: 4, isCorrect: false },
         ],
         explanation:
-          "Plastic is a kind of material that is made by people and can be formed into almost any shape. Most plastics are made from chemicals that come from petroleum (oil), natural gas, or coal. Heating these chemicals causes them to break down into molecules. Molecules are groups of two or more atoms, which are the tiny building blocks of everything. Scientists then join these molecules into chains. These chains make up plastics.",
+          "Kunststoff ist eine Art von Material, das von Menschen hergestellt wird und in fast jede Form gebracht werden kann. Die meisten Kunststoffe werden aus Chemikalien hergestellt, die aus Erdöl, Erdgas oder Kohle gewonnen werden. Durch Erhitzen dieser Chemikalien zerfallen sie in Moleküle. Moleküle sind Gruppen von zwei oder mehr Atomen, die die winzigen Bausteine von allem sind. Die Wissenschaftler fügen diese Moleküle dann zu Ketten zusammen. Diese Ketten bilden die Kunststoffe",
       },
       {
         id: 2,
         img: singleuse,
-        question: "What is single-use plastic?",
+        question: "Was ist Einwegplastik??",
         answerOptions: [
           {
-            answer: "Objects that are made to be used by just one person",
+            answer:
+              "Gegenstände, die für die Benutzung durch nur eine Person gedacht sind",
             id: 1,
             isCorrect: false,
           },
 
           {
-            answer: "Objects that can be used again and again",
+            answer:
+              "Gegenstände, die wieder und wieder verwendet werden können",
             id: 3,
             isCorrect: false,
           },
 
           {
-            answer: "Objects that are used by animals",
+            answer: "Gegenstände, die von Tieren benutzt werden",
             id: 4,
             isCorrect: false,
           },
           {
-            answer: "Objects that are made to be used once and thrown away",
+            answer:
+              "Gegenstände, die dafür gemacht sind, einmal benutzt und dann weggeworfen zu werden",
             id: 2,
             isCorrect: true,
           },
         ],
         explanation:
-          "Single-use plastics are any kind of plastic tool that we use one time and then throw away. Things like plastic straws, forks, knives, spoons, water/soda bottles and plastic grocery bags are all examples of single-use plastics.",
+          "Einwegplastik ist jede Art von Plastikwerkzeug, das wir einmal benutzen und dann wegwerfen, wie Plastikstrohhalme, Wasserflaschen und Plastiktüten",
       },
       {
         id: 3,
         img: brush,
-        question: "Which is NOT a single-use plastic item ?",
+        question: "Welches ist KEIN Einwegplastikartikel?",
         answerOptions: [
-          { answer: "Shampoo bottle", id: 1, isCorrect: false },
-          { answer: "Straw", id: 2, isCorrect: false },
-          { answer: "Lego", id: 3, isCorrect: true },
-          { answer: "A potato chip bag", id: 4, isCorrect: false },
+          { answer: "Shampoo Flasche", id: 1, isCorrect: false },
+          { answer: "Strohhalm", id: 2, isCorrect: false },
+          { answer: "Lego Baustein", id: 3, isCorrect: true },
+          { answer: "Eine Chips-Packung", id: 4, isCorrect: false },
         ],
         explanation:
-          "Even though Lego items are made out of plastic, it can be played with many times.",
+          "Auch wenn Lego-Artikel aus Plastik sind, kann man mit ihnen viele Male spielen",
       },
       {
         id: 4,
         img: balls,
-        question: "What is not made out of plastic?",
+        question: "Was ist nicht aus Plastik?",
         answerOptions: [
-          { answer: "Chewing gum", id: 1, isCorrect: false },
-          { answer: "Wooden cooking spoon", id: 2, isCorrect: true },
+          { answer: "Kaugummi", id: 1, isCorrect: false },
+          { answer: "Kochlöffel aus Holz", id: 2, isCorrect: true },
           { answer: "Shampoo", id: 3, isCorrect: false },
-          { answer: "Wet wipes", id: 4, isCorrect: false },
+          { answer: "Feuchttücher", id: 4, isCorrect: false },
         ],
         explanation:
-          "The wooden cooking spoon is usually made of natural wood and does not contain plastic. Chewing gums are mostly made of petroleum-based plastic polymers, and wet wipes and shampoo also often contain polyester or polypropylene.",
+          "Der Kochlöffel aus Holz ist in der Regel aus natürlichem Holz und enthält keinen Kunststoff.",
       },
       {
         id: 5,
         img: bottlebeach,
         question:
-          "What happens to a plastic bottle if you bury it in the ground?",
+          "Was passiert mit einer Plastikflasche, wenn man sie im Boden vergräbt?",
         answerOptions: [
-          { answer: "It turns into rock", id: 1, isCorrect: false },
+          { answer: "Sie verwandelt sich in Stein", id: 1, isCorrect: false },
           {
-            answer: "It breaks up into tiny pieces but does not disappear",
+            answer: "Sie zerfällt in winzige Stücke, verschwindet aber nicht.",
             id: 4,
             isCorrect: true,
           },
-          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
-          { answer: "It comes up again", id: 3, isCorrect: false },
+          {
+            answer: "Sie zerfällt in winziger Stücke und verschwindet",
+            id: 2,
+            isCorrect: false,
+          },
+          { answer: "Sie kommt wieder hoch", id: 3, isCorrect: false },
         ],
         explanation:
-          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+          "Plastik kann nicht in kleinere Produkte zerlegt werden. Stattdessen zerfällt es in winzige Stücke und verschwindet nicht.",
       },
     ],
   },
   {
     page: 9,
     type: "chapter",
-    title: "A day at the beach",
+    title: "Ein Tag am Strand",
     chapter_number: "2",
     sub_chapter_number: "3",
     content: [
@@ -334,7 +341,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "At the end of the day, before they have to go back home, <companion> tells them : “You are my friends now, if you ever need me and are near water, just call my name and I’ll be there for you, always!”. Knowing that they had made a new friend, <character> and the friends went back home happy.",
+        text: 'Am Ende des Tages, bevor sie nach Hause gehen müssen, sagt <companion> zu ihnen: "Ihr seid jetzt meine Freunde, wenn ihr mich jemals braucht und in der Nähe von Wasser seid, ruft einfach meinen Namen und ich werde für euch da sein, immer!". Mit dem Wissen, dass sie einen neuen Freund gefunden haben, gehen <comapanion> und die Freunde glücklich nach Hause.',
       },
       {
         type: "trigger",
@@ -345,7 +352,7 @@ const story = [
   {
     page: 10,
     type: "chapter",
-    title: "Back to school",
+    title: "Zurück zur Schule",
     chapter_number: "3",
     sub_chapter_number: "1",
     content: [
@@ -356,18 +363,18 @@ const story = [
       {},
       {
         type: "paragraph",
-        text: "On Monday, it’s time to go back to school. <character> is eager to talk to Mrs Miller about <his/her> about what they could do to make the park a better place. At the beginning of the class, <he/she>  raises <his/her> hand and asks: “Mrs Miller, I went to the park the other day and it was full of trash and it was the same thing in the water at the beach. It makes me really sad.”.",
+        text: 'Am Montag ist es Zeit, wieder in die Schule zu gehen. <companion> möchte gerne mit Frau Miller darüber sprechen, was sie tun könnten, um den Park besser zu machen. Zu Beginn der Stunde hebt <er/sie> die Hand und fragt: "Frau Miller, ich war neulich im Park und er war voller Müll und das Gleiche war im Wasser am Strand. Das macht mich wirklich traurig."',
       },
       {
         type: "paragraph",
-        text: "Mrs Miller looks at <him/her> with a lot of compassion and answers: “I understand your sadness <character>. I think today we can skip the normal lesson and talk about pollution.”",
+        text: 'Frau Miller sieht <ihn/sie> mit viel Mitgefühl an und antwortet: "Ich verstehe deine Traurigkeit <character>. Ich denke, wir können heute die normale Stunde überspringen und über Umweltverschmutzung sprechen."',
       },
     ],
   },
   {
     page: 11,
     type: "lesson",
-    title: "What is microplastic?",
+    title: "Was ist Mikroplastik?",
     content: [
       {
         type: "image",
@@ -375,7 +382,7 @@ const story = [
       },
       {
         type: "text",
-        text: "Now you will find out how harmful plastic can be and what you could do in order to prevent a lot of trash",
+        text: "Jetzt erfährst du, wie schädlich Plastik sein kann und wie es in den Ozean gelangt",
       },
       {
         type: "video",
@@ -390,152 +397,153 @@ const story = [
       {
         id: 10,
         img: ocean,
-        question: "Why Is The Ocean Important?",
+        question: "Warum ist das Meer so wichtig für uns Menschen?",
         answerOptions: [
           {
-            answer: "Because it provides us with food,plants and oxygen",
+            answer:
+              "Weil sie uns mit Nahrung, Pflanzen und Sauerstoff versorgt",
             id: 4,
             isCorrect: true,
           },
-          { answer: "Because it looks good", id: 1, isCorrect: false },
+          { answer: "Weil es schön aussieht", id: 1, isCorrect: false },
           {
-            answer: "Because it produces fresh water",
+            answer: "Weil es frisches Wasser produziert",
             id: 2,
             isCorrect: false,
           },
-          { answer: "Because you can swim in it", id: 3, isCorrect: false },
+          { answer: "Weil man darin schwimmen kann", id: 3, isCorrect: false },
         ],
         explanation:
-          "Oceans are a great source of food for people around the world. They also provide minerals, oil, and natural gas. Phytoplankton and algae create much of the world’s oxygen. Oceans also help to keep climates stable by storing heat from the Sun.",
+          " Die Meere sind eine wichtige Nahrungsquelle für Menschen auf der ganzen Welt. Sie liefern auch Mineralien, Öl und Erdgas. Phytoplankton und Algen erzeugen einen Großteil des weltweiten Sauerstoffs.",
       },
       {
         id: 11,
         img: plasticocean,
-        question: "What happens to plastic trash when it gets into the ocean?",
+        question: "Was passiert mit Plastikmüll, wenn er ins Meer gelangt?",
         answerOptions: [
           {
-            answer: "Sinks to the bottom and gets buried under the sand",
+            answer: "Er sinkt auf den Grund und wird unter dem Sand begraben",
             id: 1,
             isCorrect: false,
           },
-          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
+          { answer: "Er zerfällt und verschwindet", id: 2, isCorrect: false },
           {
-            answer: "Dissolves and decomposes in the water",
+            answer: "Löst sich auf und zersetzt sich im Wasser",
             id: 3,
             isCorrect: false,
           },
           {
-            answer: "Breaks up into smaller and smaller pieces",
+            answer: "Er zerfällt in immer kleinere Teile",
             id: 4,
             isCorrect: true,
           },
         ],
         explanation:
-          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+          "Plastik kann nicht in kleinere Produkte zerlegt werden. Stattdessen zerfällt es in winzige Stücke und verschwindet nicht.",
       },
       {
         id: 12,
         img: microplastic,
-        question: "What is Microplastic?",
+        question: "Was ist Mikroplastik?",
         answerOptions: [
           {
             answer:
-              "Soft plastic created when you melt hard plastic in the microwave",
+              "Weiches Plastik, das entsteht, wenn man hartes Plastik in der Mikrowelle schmilzt",
             id: 1,
             isCorrect: false,
           },
           {
             answer:
-              "Plastic particles so small that they can only be seen under a microscope",
+              "Plastikteilchen, die so klein sind, dass man sie nur unter dem Mikroskop sehen kann",
             id: 2,
             isCorrect: false,
           },
           {
             answer:
-              "Plastic particles, which have the size between one and five millimeters",
+              "Kunststoffpartikel, die eine Größe zwischen einem und fünf Millimetern haben",
             id: 4,
             isCorrect: true,
           },
           {
-            answer: "Plastic, that is only seeable in the water",
+            answer: "Plastik, das man nur im Wasser sehen kann",
             id: 3,
             isCorrect: false,
           },
         ],
         explanation:
-          "Microplastics consist of tiny plastic particles that are hard to see with the eyes. They are formed when larger plastic parts decompose, but are also contained in cosmetics and care products. In shower gel, sunscreen and other products, they improve the cleansing effect or make them particularly creamy.",
+          "Mikroplastik besteht aus winzigen Kunststoffteilchen, die mit dem Auge kaum zu erkennen sind. Sie entstehen, wenn sich größere Kunststoffteile zersetzen, sind aber auch in Kosmetika und Pflegeprodukten enthalten.",
       },
       {
         id: 13,
         img: turtle,
-        question: "Why do turtles and other ocean animals eat plastic bags?",
+        question: "Warum fressen Wale und andere Meerestiere Plastiktüten?",
         answerOptions: [
-          { answer: "Because they taste nice", id: 1, isCorrect: false },
+          { answer: "Weil sie gut schmecken", id: 1, isCorrect: false },
           {
-            answer: "They mistake it for real food",
+            answer: "Sie verwechseln es mit Essen",
             id: 4,
             isCorrect: true,
           },
           {
-            answer: "Because it's easier than hunting",
+            answer: "Weil sie dann nicht jagen gehen müssen",
             id: 2,
             isCorrect: false,
           },
           {
-            answer: "Because they can’t see very well underwater",
+            answer: "Weil sie unter Wasser nicht gut sehen können",
             id: 3,
             isCorrect: false,
           },
         ],
         explanation:
-          "Animals eat plastic because it looks similar to their usual prey. As algae grows on plastic, the smell attracts animals that feed on it. Plastic can make animals sick and can get stuck in their stomachs.",
+          "Tiere fressen Plastik, weil es ihrer üblichen Beute ähnlich sieht. Da auf Plastik Algen wachsen, lockt der Geruch Tiere an, die sich davon ernähren. Plastik kann Tiere krank machen.",
       },
       {
         id: 14,
         img: micro,
-        question: "What happens if animals eat micro platic?",
+        question: "Was passiert, wenn Tiere Mikroplastik fressen??",
         answerOptions: [
-          { answer: "They get even more hungry", id: 1, isCorrect: false },
-          { answer: "They can swim faster", id: 2, isCorrect: false },
-          { answer: "They dive with it", id: 3, isCorrect: false },
+          { answer: "Sie werden noch hungriger", id: 1, isCorrect: false },
+          { answer: "Sie können schneller schwimmen", id: 2, isCorrect: false },
+          { answer: "Sie können damit tauchen", id: 3, isCorrect: false },
           {
-            answer: "It makes their stomage sick",
+            answer: "Sie bekommen Bauchschmerzen",
             id: 4,
             isCorrect: true,
           },
         ],
         explanation:
-          "PWhen turtles eat plastic, it can block their intestinal system (their guts). Therefore, they can no longer eat properly, which can kill them.",
+          "Wenn z.B. Schildkröten Plastik fressen, kann es ihr Darmsystem (ihre Eingeweide) verstopfen. Daher können sie nicht mehr richtig fressen, was zum Tod führen kann.",
       },
       {
         id: 15,
         img: bottlebeach,
-        question: "How does plastic get into the ocean?",
+        question: "Wie gelangt Plastik ins Meer?",
         answerOptions: [
-          { answer: "It turns into rock", id: 1, isCorrect: false },
-          { answer: "It breaks down and disappears", id: 2, isCorrect: false },
-          { answer: "It comes up again", id: 3, isCorrect: false },
+          { answer: "Flugzeuge lassen es fallen", id: 1, isCorrect: false },
+          { answer: "Die Meerestiere suchen danach", id: 2, isCorrect: false },
+          { answer: "Es bildet sich am Meeresgrund", id: 3, isCorrect: false },
           {
-            answer: "It breaks up into tiny pieces but does not disappear",
+            answer: "Über die Flüsse",
             id: 4,
             isCorrect: true,
           },
         ],
         explanation:
-          "Plastic can not be decomposed to smaller products. Instead it breaks into tiny pieces and does not disappear.",
+          "Sachen zum Waschen wie Duschgel oder Shampoo sowie Kosmetikprodukte enthalten Mikroplastik. Über das Abwasser gelangen die winzigen Plastikkügelchen ins Meer. Auch Autoreifen verlieren beim Fahren Mikroplastik",
       },
     ],
   },
   {
     page: 13,
     type: "chapter",
-    title: "Back to school",
+    title: "Zurück zur Schule",
     chapter_number: "3",
     sub_chapter_number: "2",
     content: [
       {
         type: "paragraph",
-        text: "At the end of the class, Mrs Miller gives them an assignment: “When you go home, I want you to take a photo of your recycling bins at home and bring them for the next class.”",
+        text: 'Am Ende der Stunde gibt Frau Miller ihnen eine Aufgabe: "Wenn ihr nach Hause geht, möchte ich, dass ihr ein Foto von euren Mülltonnen zu Hause macht und es in die nächste Stunde mitbringt."',
       },
       {
         type: "image",
@@ -543,14 +551,14 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "<character> has an idea and asks the class and Mrs Miller: “I think I understand better what I can do to help, but I don’t think I can do everything alone. Can I have your help after school to go clean the park? I think it would make Grandma happy.” The other kids answer enthusiastically and Mrs Miller adds: “I’ll be there for sure <character>, I am proud of you for taking the initiative.”",
+        text: '<character> hat eine Idee und fragt die Klasse und Frau Miller: "Ich glaube, ich weiß jetzt was ich tun kann, um zu helfen. Ich glaube aber nicht, dass ich alles allein machen kann. Könnt ihr mir nach der Schule helfen, den Park zu säubern? Ich glaube, das würde Oma glücklich machen." Die anderen Kinder sind begeistert, und Frau Miller fügt hinzu: "Ich werde auf jeden Fall dabei sein <character>, ich bin stolz auf dich, dass du die Initiative ergriffen hast."',
       },
     ],
   },
   {
     page: 14,
     type: "chapter",
-    title: "Making Grandma happy",
+    title: "Oma glücklich machen",
     chapter_number: "4",
     sub_chapter_number: "1",
     content: [
@@ -560,11 +568,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "With <his/her> whole class all excited to help, <character> goes to the park after the school day is over. Mrs Miller is coming with them and a few other adults from the school are also going.",
+        text: "Mit <seiner/ihrer> ganzen Klasse, die sich darauf freut, zu helfen, geht <character> nach dem Schultag in den Park. Frau Miller und ein paar andere Lehrer aus der Schule gehen auch mit.",
       },
       {
         type: "paragraph",
-        text: "The park is still in a bad state, but everyone has their heart focused on making it cleaner and more welcoming to the local community.",
+        text: "Der Park ist immer noch in einem schlechten Zustand, aber alle sind bestrebt, ihn sauberer zu machen.",
       },
       {
         type: "image",
@@ -572,7 +580,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "<character> turns to <his/her> friends and other classmates to tell them: “Remember what we learned about recycling, don’t throw everything in the garbage.” <He/She> then points the different bins to them.",
+        text: '<character> wendet sich an <seine/ihre> Freunde und andere Klassenkameraden und sagt ihnen: "Denkt daran, was wir über Recycling gelernt haben, werft nicht alles in eine Mülltonne." <Er/Sie> zeigt ihnen dann die verschiedenen Mülltonnen.',
       },
       {},
       {
@@ -584,18 +592,18 @@ const story = [
   {
     page: 15,
     type: "game",
-    name: "ParkGame",
+    name: "Park aufräumen",
   },
   {
     page: 16,
     type: "chapter",
-    title: "Making Grandma happy",
+    title: "Oma glücklich machen",
     chapter_number: "4",
     sub_chapter_number: "2",
     content: [
       {
         type: "paragraph",
-        text: "After the big effort to clean the park, everybody is quite tired from all the work, but <character> hears a faint sound in the distance. <He/She> tells <his/her> friends to come quick and they run towards the little river at the end of the park.",
+        text: "Nach der großen Anstrengung, den Park zu säubern, sind alle ziemlich müde von der ganzen Arbeit, aber <character> hört ein schwaches Geräusch in der Ferne. <Er/Sie> sagt seinen/ihren Freunden, dass sie schnell kommen sollen, und sie laufen zu dem kleinen Fluss am Ende des Parks.",
       },
       {
         type: "image",
@@ -603,11 +611,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "<companion> is there in the river with some of his animal friends, but it doesn’t seem good at all. The river is full of plastic bottles and other items. <character> tells <his/her> friends: “Come on, we need to help <companion> and all his friends. It’s good to have a clean park for us, but it’s important that everyone has a clean place to live and play.”",
+        text: '<companion> ist dort im Fluss mit einigen seiner tierischen Freunde, aber es sieht gar nicht gut aus. Der Fluss ist voll mit Plastikflaschen und anderen Gegenständen. <character> sagt <seinen/ihren> Freunden: "Kommt schon, wir müssen <companion> und all seinen Freunden helfen. Es ist gut, einen sauberen Park für uns zu haben, aber es ist wichtig, dass alle einen sauberen Ort zum Leben und Spielen haben."',
       },
       {
         type: "paragraph",
-        text: "Encouraged by the words, everybody is energized once again and together they work hard to pick up all the trash in the shallow water, making sure the plastic cannot hurt the animals anymore.",
+        text: " Ermutigt durch diese Worte sind alle wieder voller Tatendrang und arbeiten gemeinsam hart daran, den Müll im flachen Wasser aufzusammeln, damit das Plastik den Tieren nicht mehr schaden kann.",
       },
       {
         type: "image",
@@ -615,7 +623,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "With the park and the river finally clean <character> finally goes home for a well earned rest. Dreaming of clean parks and clean forest, playing there with <companion> and all <his/her> friends.",
+        text: "Nachdem der Park und der Fluss endlich sauber sind, geht <character> endlich nach Hause, um sich auszuruhen. Er träumt von sauberen Parks und sauberen Wäldern, in denen er mit <companion> und all <seinen/ihren> Freunden spielt",
       },
       {
         type: "image",
@@ -623,7 +631,7 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "The very next day, after school, <he/she> takes <his/her> grandmother to the park. “Look Grandma! Look what we did.” Ania took a minute to look around her, she didn’t seem to believe her eyes. She looks tenderly at <character> and says: “This is the best gift I ever received. It feels just like in my youth. Now we just need to plant more trees, will you help me <character>?”.",
+        text: 'Am nächsten Tag, nach der Schule, geht <er/sie> mit <seiner/ihrer> Großmutter in den Park. "Schau Oma! Schau, was wir gemacht haben." Ania schaut sich einen Moment um, sie scheint ihren Augen nicht zu trauen. Sie schaut <character> glücklich an und sagt: "Das ist das beste Geschenk, das ich je bekommen habe. Es fühlt sich genau wie in meiner Jugend an. Jetzt müssen wir nur noch mehr Bäume pflanzen, hilfst du mir, <character>?".',
       },
       {
         type: "image",
@@ -631,11 +639,11 @@ const story = [
       },
       {
         type: "paragraph",
-        text: "Full of joy from <his/her> accomplishments, <character> replies: “Of course Grandma!”.",
+        text: 'Voller Freude über <seine/ihre> Leistungen antwortet <character>: "Natürlich Oma!".',
       },
       {
         type: "paragraph",
-        text: "The End",
+        text: "Das Ende",
       },
     ],
   },
@@ -650,7 +658,7 @@ const story = [
           { id: 2, answer: refillablebottle, isCorrect: true },
         ],
         explanation:
-          "Instead of using a plastic bottle, you can easily reuse the other one and refill water with it all the time. You can even add your favorite flavor to it.",
+          "Anstatt eine Plastikflasche zu verwenden, kannst du die andere Flasche einfach wiederverwenden und immer wieder Wasser nachfüllen.",
         img: refill,
       },
       {
@@ -660,7 +668,7 @@ const story = [
           { id: 2, answer: yoghurt, isCorrect: false },
         ],
         explanation:
-          "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",
+          "Warum machst du nicht mal deinen eigenen Joghurt? Du kannst ihn in ein Glas füllen und deine Lieblingsfrüchte oder -müsli dazugeben.",
         img: homemadeyoghurt,
       },
       {
@@ -670,7 +678,7 @@ const story = [
           { id: 2, answer: juicepack, isCorrect: false },
         ],
         explanation:
-          "Why not try to make your own Yoghurt? You can put it in a glass and add your favorite fruits or cereals.",
+          "Warum presst du nicht mal deinen eigenen Saft aus leckeren Orangen?",
         img: pressedjuice,
       },
       {
@@ -680,7 +688,7 @@ const story = [
           { id: 2, answer: glasstraw, isCorrect: true },
         ],
         explanation:
-          "Instead of a plasticstraw, you can use glasstraws, paperstraws or even other things. Pro tip: Use macaronis as straw",
+          "Anstelle eines Plastikstrohhalms kannst du auch Glashalme, Papierhalme oder andere Dinge verwenden. Profi-Tipp: Makkaronis",
         img: pastastraw,
       },
 
@@ -691,7 +699,7 @@ const story = [
           { id: 2, answer: apple, isCorrect: true },
         ],
         explanation:
-          "Fruits don't need an extra wrapping around. Just take them without or put them in a tupperware",
+          "Früchte brauchen keine extra Verpackung. Nimm sie einfach ohne oder steck sie in eine Tupperdose",
         img: applebox,
       },
     ],
@@ -699,12 +707,12 @@ const story = [
   {
     page: 18,
     type: "lesson",
-    title: "Take action!",
+    title: "Jetzt bist du dran!",
     content: [
       {
         id: 7,
         type: "text",
-        text: "Look what the kids from in School in Hamburg made. Maybe you can also find something nice to do in order to protect the planet and save plastic. Ask your teacher, if you can also do a trash collection or even join the Plastic Pirates",
+        text: "Schaut euch an, was die Kinder in der Schule in Hamburg gemacht haben. Vielleicht fällt dir was ein, was ihr zusammen in der Schule machen könnt oder schließ dich den Plastikpiraten an.",
       },
       {
         id: 8,
@@ -720,7 +728,7 @@ const story = [
     ],
   },
   {
-    type: "restart",
+    type: "Neustart",
   },
 ];
 
